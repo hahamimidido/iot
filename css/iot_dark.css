@@ -1,0 +1,87 @@
+/*
+Error: Undefined variable: "$mainColor".
+        on line 7 of /Users/u0096023/CloudStation/【2020】/my/IOT/IOT_GUI/sass/_variable_dark.scss
+        from line 3 of /Users/u0096023/CloudStation/【2020】/my/IOT/IOT_GUI/sass/iot_dark.scss
+
+2: // 共通
+3: @import "_variable_dark";					//變數
+4: @import "sass/_normalize";				//reset
+5: @import "sass/_mixin";					//客製MIXIN
+6: @import "sass/_typography";				//CP文字排版
+7: @import "sass/_font";					//文字設定
+8: 
+9: // 元素
+10: @import "sass/_grid";					//格線
+11: @import "sass/_breadcrumb";				//麵包屑
+12: @import "sass/_divider";				//分隔線
+
+Backtrace:
+/Users/u0096023/CloudStation/【2020】/my/IOT/IOT_GUI/sass/_variable_dark.scss:7
+/Users/u0096023/CloudStation/【2020】/my/IOT/IOT_GUI/sass/iot_dark.scss:3
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.25/lib/sass/script/tree/variable.rb:49:in `_perform'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.25/lib/sass/script/tree/node.rb:58:in `perform'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.25/lib/sass/script/tree/funcall.rb:173:in `perform_arg'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.25/lib/sass/script/tree/funcall.rb:124:in `block in _perform'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.25/lib/sass/script/tree/funcall.rb:124:in `each'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.25/lib/sass/script/tree/funcall.rb:124:in `each_with_index'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.25/lib/sass/script/tree/funcall.rb:124:in `each'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.25/lib/sass/script/tree/funcall.rb:124:in `map'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.25/lib/sass/script/tree/funcall.rb:124:in `_perform'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.25/lib/sass/script/tree/node.rb:58:in `perform'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:472:in `visit_variable'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.25/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.25/lib/sass/stack.rb:79:in `block in with_base'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.25/lib/sass/stack.rb:115:in `with_frame'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.25/lib/sass/stack.rb:79:in `with_base'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:162:in `visit'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:329:in `block (2 levels) in visit_import'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:329:in `map'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:329:in `block in visit_import'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.25/lib/sass/stack.rb:88:in `block in with_import'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.25/lib/sass/stack.rb:115:in `with_frame'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.25/lib/sass/stack.rb:88:in `with_import'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:326:in `visit_import'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.25/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.25/lib/sass/stack.rb:79:in `block in with_base'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.25/lib/sass/stack.rb:115:in `with_frame'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.25/lib/sass/stack.rb:79:in `with_base'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:162:in `visit'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.25/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.25/lib/sass/tree/visitors/base.rb:52:in `map'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.25/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:171:in `block in visit_children'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:170:in `visit_children'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.25/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:190:in `visit_root'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.25/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:161:in `visit'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.25/lib/sass/tree/visitors/perform.rb:10:in `visit'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.25/lib/sass/tree/root_node.rb:36:in `css_tree'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.25/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.25/lib/sass/engine.rb:384:in `_render_with_sourcemap'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.25/lib/sass/engine.rb:301:in `render_with_sourcemap'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/compass-import-once-1.0.5/lib/compass/import-once/engine.rb:23:in `block in render_with_sourcemap'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/compass-import-once-1.0.5/lib/compass/import-once/engine.rb:29:in `with_import_scope'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/compass-import-once-1.0.5/lib/compass/import-once/engine.rb:22:in `render_with_sourcemap'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.25/lib/sass/plugin/compiler.rb:492:in `update_stylesheet'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.25/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.25/lib/sass/plugin/compiler.rb:209:in `each'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/sass-3.4.25/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/compass-1.0.3/lib/compass/sass_compiler.rb:40:in `compile!'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/compass-1.0.3/lib/compass/commands/update_project.rb:49:in `perform'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/compass-1.0.3/lib/compass/commands/base.rb:18:in `execute'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/compass-1.0.3/lib/compass/commands/project_base.rb:19:in `execute'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/compass-1.0.3/lib/compass/exec/sub_command_ui.rb:43:in `perform!'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/compass-1.0.3/lib/compass/exec/sub_command_ui.rb:15:in `run!'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/compass-1.0.3/bin/compass:30:in `block in <top (required)>'
+/Applications/Koala.app/Contents/Resources/app.nw/rubygems/gems/compass-1.0.3/bin/compass:44:in `<top (required)>'
+/Applications/Koala.app/Contents/Resources/app.nw/bin/compass:22:in `load'
+/Applications/Koala.app/Contents/Resources/app.nw/bin/compass:22:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Undefined variable: \"$mainColor\".\A         on line 7 of /Users/u0096023/CloudStation/【2020】/my/IOT/IOT_GUI/sass/_variable_dark.scss\A         from line 3 of /Users/u0096023/CloudStation/【2020】/my/IOT/IOT_GUI/sass/iot_dark.scss\A \A 2: // 共通\A 3: @import \"_variable_dark\";					//變數\A 4: @import \"sass/_normalize\";				//reset\A 5: @import \"sass/_mixin\";					//客製MIXIN\A 6: @import \"sass/_typography\";				//CP文字排版\A 7: @import \"sass/_font\";					//文字設定\A 8: \A 9: // 元素\A 10: @import \"sass/_grid\";					//格線\A 11: @import \"sass/_breadcrumb\";				//麵包屑\A 12: @import \"sass/_divider\";				//分隔線"; }
