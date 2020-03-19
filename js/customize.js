@@ -25,11 +25,11 @@ $(function() {
         $(this).blur();
         e.preventDefault();
     });
-    var resizeChartTimer;
-    $(window).on('resize', function() {
-        clearTimeout(resizeChartTimer);
-        resizeChartTimer = setTimeout(function() {
-            location.reload();
-        }, 50);
-    });
+    // var resizeChartTimer;
+    // $(window).on('resize', function() {
+    //     clearTimeout(resizeChartTimer);
+    //     resizeChartTimer = setTimeout(function() {
+    //         location.reload();
+    //     }, 50);
+    // });
 });
