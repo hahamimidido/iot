@@ -14,9 +14,10 @@
     <link rel="stylesheet" href="css/iot.css">
     <!-- favicon -->
     <link href="images/favicon.png" rel="icon" type="image/x-icon">
+    <!-- high light -->
+    <link rel="stylesheet" href="vendor/highlight/monokai-sublime.css">
 </head>
 <!-- 切換亮色與暗色，亮色不用加註，暗色 class="dark" -->
-
 <body class="dark">
     <div class="wrapper">
         <!-- header -->
@@ -47,7 +48,7 @@
                 <span></span>
                 <span></span>
             </a>
-            <!-- menu -->
+             <!-- menu -->
             <nav>
                 <!-- level1 -->
                 <ul>
@@ -189,15 +190,46 @@
             <div class="grid">
                 <div class="container">
                     <div class="title">
-                        <h2>多機台工作看板<span>第二層選單（如果需要才顯示)</span></h2>
+                        <h2>格線系統</h2>
                     </div>
+                    <div class="demo_info">
+                        <h3>格線設定</h3>
+                        <pre><code class="language-html">&lt;!-- 先決定格線形式，例如6-6，代表雙欄 --&gt;
+&lt;div class="flex-6-6"&gt;
+&lt;!-- 視情況決定column div數量，如範例此格線需要2個 --&gt;
+    &lt;div class="col"&gt;...&lt;/div&gt;
+    &lt;div class="col"&gt;...&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+                    </div>
+                    <div class="demo_info">
+                        <h3>格線內標準標籤格式</h3>
+                        <pre><code class="language-html">&lt;div class="col "&gt;
+    &lt;!-- 圖表都用chart_block包起來 --&gt;
+    &lt;div class="chart_block"&gt;
+        &lt;div class="chart_head"&gt;
+            &lt;!-- 圖表標題 --&gt;
+            &lt;h3&gt;8&lt;/h3&gt;
+            &lt;!-- 圖表更新日期及問題 --&gt;
+            &lt;div class="chart_info"&gt;
+                &lt;div class="update"&gt;...&lt;/div&gt;
+                &lt;div class="question"&gt;...&lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;!-- widget 都放置此區塊 --&gt;
+        &lt;div class="chart_content"&gt;...&lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+                    </div>
+                    <div class="divider">左大右小 class="flex-8-4"</div>
                     <!-- flex-8-4 -->
+                    <h3 class="demo">flex-8-4</h3>
                     <div class="flex-8-4">
+
                         <div class="col ">
                             <div class="chart_block">
                                 <div class="chart_head">
                                     <!-- 圖表標題 -->
-                                    <h3>範例-長條圖</h3>
+                                    <h3>8</h3>
                                     <!-- 圖表更新日期 -->
                                     <div class="chart_info">
                                         <div class="update">
@@ -209,11 +241,6 @@
                                     </div>
                                 </div>
                                 <div class="chart_content">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
-                                    <!-- 長條圖 -->
-                                    <figure class="highcharts-figure">
-                                        <div id="areaChart"></div>
-                                    </figure>
                                 </div>
                             </div>
                         </div>
@@ -221,7 +248,7 @@
                             <div class="chart_block">
                                 <div class="chart_head">
                                     <!-- 圖表標題 -->
-                                    <h3>範例-圓餅圖</h3>
+                                    <h3>4</h3>
                                     <!-- 圖表更新日期 -->
                                     <div class="chart_info">
                                         <div class="update">
@@ -233,22 +260,19 @@
                                     </div>
                                 </div>
                                 <div class="chart_content">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
-                                    <!-- 圓餅圖 -->
-                                    <figure class="highcharts-figure">
-                                        <div id="pie"></div>
-                                    </figure>
                                 </div>
                             </div>
                         </div>
                     </div>
+                    <div class="divider">三欄等分 class="flex-4-4-4"</div>
                     <!-- flex-4-4-4 -->
+                    <h3 class="demo">flex-4-4-4</h3>
                     <div class="flex-4-4-4">
                         <div class="col">
                             <div class="chart_block">
                                 <div class="chart_head">
                                     <!-- 圖表標題 -->
-                                    <h3>範例-散點圖</h3>
+                                    <h3>4</h3>
                                     <!-- 圖表更新日期 -->
                                     <div class="chart_info">
                                         <div class="update">
@@ -260,10 +284,6 @@
                                     </div>
                                 </div>
                                 <div class="chart_content">
-                                    <!-- 散點圖 -->
-                                    <figure class="highcharts-figure">
-                                        <div id="plot"></div>
-                                    </figure>
                                 </div>
                             </div>
                         </div>
@@ -271,7 +291,7 @@
                             <div class="chart_block">
                                 <div class="chart_head">
                                     <!-- 圖表標題 -->
-                                    <h3>折線圖</h3>
+                                    <h3>4</h3>
                                     <!-- 圖表更新日期 -->
                                     <div class="chart_info">
                                         <div class="update">
@@ -284,10 +304,6 @@
                                 </div>
                                 <div class="chart_content">
                                     <div class="chart_content">
-                                        <!-- 折線圖 -->
-                                        <figure class="highcharts-figure">
-                                            <div id="line"></div>
-                                        </figure>
                                     </div>
                                 </div>
                             </div>
@@ -296,7 +312,7 @@
                             <div class="chart_block">
                                 <div class="chart_head">
                                     <!-- 圖表標題 -->
-                                    <h3>長條圖</h3>
+                                    <h3>4</h3>
                                     <!-- 圖表更新日期 -->
                                     <div class="chart_info">
                                         <div class="update">
@@ -308,21 +324,19 @@
                                     </div>
                                 </div>
                                 <div class="chart_content">
-                                    <!-- 雷達圖 -->
-                                    <figure class="highcharts-figure">
-                                        <div id="line2"></div>
-                                    </figure>
                                 </div>
                             </div>
                         </div>
                     </div>
+                    <div class="divider">二欄等分 class="flex-6-6"</div>
                     <!-- flex-6-6 -->
+                    <h3 class="demo">flex-6-6</h3>
                     <div class="flex-6-6">
                         <div class="col">
                             <div class="chart_block">
                                 <div class="chart_head">
                                     <!-- 圖表標題 -->
-                                    <h3>長條圖</h3>
+                                    <h3>6</h3>
                                     <!-- 圖表更新日期 -->
                                     <div class="chart_info">
                                         <div class="update">
@@ -335,10 +349,6 @@
                                 </div>
                                 <div class="chart_content">
                                     <div class="chart_content">
-                                        <!-- 折線圖 -->
-                                        <figure class="highcharts-figure">
-                                            <div id="basic_column"></div>
-                                        </figure>
                                     </div>
                                 </div>
                             </div>
@@ -347,7 +357,7 @@
                             <div class="chart_block">
                                 <div class="chart_head">
                                     <!-- 圖表標題 -->
-                                    <h3>長條圖+折線圖</h3>
+                                    <h3>6</h3>
                                     <!-- 圖表更新日期 -->
                                     <div class="chart_info">
                                         <div class="update">
@@ -360,22 +370,21 @@
                                 </div>
                                 <div class="chart_content">
                                     <div class="chart_content">
-                                        <!-- 折線圖 -->
-                                        <figure class="highcharts-figure">
-                                            <div id="axes_line_column"></div>
                                         </figure>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
+                    <div class="divider">單欄 class="flex-12"</div>
                     <!-- flex-12 -->
+                    <h3 class="demo">flex-12</h3>
                     <div class="flex-12">
                         <div class="col">
                             <div class="chart_block">
                                 <div class="chart_head">
                                     <!-- 圖表標題 -->
-                                    <h3>圓餅圖</h3>
+                                    <h3>12</h3>
                                     <!-- 圖表更新日期 -->
                                     <div class="chart_info">
                                         <div class="update">
@@ -388,22 +397,20 @@
                                 </div>
                                 <div class="chart_content">
                                     <div class="chart_content">
-                                        <!-- 折線圖 -->
-                                        <figure class="highcharts-figure">
-                                            <div id="piefill"></div>
-                                        </figure>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
+                    <div class="divider">3欄 左右欄較小 中間欄較大 class="flex-3-6-3"</div>
                     <!-- flex-3-6-3 -->
+                    <h3 class="demo">flex-3-6-3</h3>
                     <div class="flex-3-6-3">
                         <div class="col">
                             <div class="chart_block">
                                 <div class="chart_head">
                                     <!-- 圖表標題 -->
-                                    <h3>雷達圖</h3>
+                                    <h3>3</h3>
                                     <!-- 圖表更新日期 -->
                                     <div class="chart_info">
                                         <div class="update">
@@ -416,10 +423,6 @@
                                 </div>
                                 <div class="chart_content">
                                     <div class="chart_content">
-                                        <!-- 折線圖 -->
-                                        <figure class="highcharts-figure">
-                                            <div id="radar"></div>
-                                        </figure>
                                     </div>
                                 </div>
                             </div>
@@ -428,7 +431,7 @@
                             <div class="chart_block">
                                 <div class="chart_head">
                                     <!-- 圖表標題 -->
-                                    <h3>箱型圖</h3>
+                                    <h3>6</h3>
                                     <!-- 圖表更新日期 -->
                                     <div class="chart_info">
                                         <div class="update">
@@ -441,10 +444,6 @@
                                 </div>
                                 <div class="chart_content">
                                     <div class="chart_content">
-                                        <!-- 折線圖 -->
-                                        <figure class="highcharts-figure">
-                                            <div id="boxplot"></div>
-                                        </figure>
                                     </div>
                                 </div>
                             </div>
@@ -453,7 +452,7 @@
                             <div class="chart_block">
                                 <div class="chart_head">
                                     <!-- 圖表標題 -->
-                                    <h3>進度條</h3>
+                                    <h3>3</h3>
                                     <!-- 圖表更新日期 -->
                                     <div class="chart_info">
                                         <div class="update">
@@ -466,10 +465,6 @@
                                 </div>
                                 <div class="chart_content">
                                     <div class="chart_content">
-                                        <!-- 折線圖 -->
-                                        <figure class="highcharts-figure">
-                                            <div id="gauge_activity"></div>
-                                        </figure>
                                     </div>
                                 </div>
                             </div>
@@ -492,4 +487,9 @@
             <script src="js/chart_setting.js"></script>
             <!-- template customize js -->
             <script src="js/customize.js"></script>
+            <!-- highlight -->
+            <script src="vendor/highlight/highlight.pack.js"></script>
+            <script>
+            hljs.initHighlightingOnLoad();
+            </script>
 </body>

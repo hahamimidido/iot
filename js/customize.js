@@ -1,7 +1,13 @@
 // 自行加入的JS請寫在這裡
 $(function() {
+    $('aside nav ul li').each(function(index, el) {
+        if ($(this).children('ul').length > 0) {
+        $(this).addClass('li_hasChild');
+    }
+    });
+
     $('aside nav ul ul').hide();
-    $('aside nav ul li a').each(function(index, el) {
+    $('.li_hasChild>a').each(function(index, el) {
         $(this).off().click(function(e) {
             $(this).parent('li').toggleClass('active');
             $(this).parents('li').siblings().removeClass('active').find('ul').stop(true, true).slideUp('800', 'easeOutQuint');
@@ -25,11 +31,11 @@ $(function() {
         $(this).blur();
         e.preventDefault();
     });
-    // var resizeChartTimer;
-    // $(window).on('resize', function() {
-    //     clearTimeout(resizeChartTimer);
-    //     resizeChartTimer = setTimeout(function() {
-    //         location.reload();
-    //     }, 50);
-    // });
+    var resizeChartTimer;
+    $(window).on('resize', function() {
+        clearTimeout(resizeChartTimer);
+        resizeChartTimer = setTimeout(function() {
+            location.reload();
+        }, 50);
+    });
 });

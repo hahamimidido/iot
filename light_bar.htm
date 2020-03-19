@@ -1,0 +1,1028 @@
+<!doctype html>
+<html lang="zh-Hant">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>AI IOT</title>
+    <!--HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries [if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->
+    <!-- hyUI css -->
+    <link rel="stylesheet" href="css/iot.css">
+    <!-- favicon -->
+    <link href="images/favicon.png" rel="icon" type="image/x-icon">
+</head>
+<!-- 切換亮色與暗色，亮色不用加註，暗色 class="dark" -->
+
+<body>
+    <div class="wrapper">
+        <!-- header -->
+        <header>
+            <div class="container">
+                <h1><a href="index.htm"><img src="images/product_logo_01.png" alt=""><span>機加工雲</span></a></h1>
+                <!-- 右側功能 -->
+                <div class="control_panel">
+                    <div class="item alert">
+                        <a href="#">
+                            <img src="images/iot_icon/alert.svg" alt="">
+                        </a>
+                        <span>100</span>
+                    </div>
+                    <div class="item account">
+                        <a href="#">
+                            <img src="images/man.svg" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- 側欄選單 -->
+        <aside>
+            <!-- toggle_menu_btn 收合按鈕 -->
+            <a href="#" class="toggle_menu_btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </a>
+            <!-- menu -->
+            <nav>
+                <!-- level1 -->
+                <ul>
+                    <li>
+                        <a href="light.htm">
+                            <img src="images/icon/icon_home.svg" alt="">
+                            <span>回首頁</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="images/iot_icon/grid.svg" alt="">
+                            <span>多機台工作看板</span>
+                        </a>
+                        <!-- level2 -->
+                        <ul>
+                            <li><a href="#"><span>第二層選單</span></a></li>
+                            <li><a href="#"><span>第二層選單</span></a></li>
+                            <li><a href="#"><span>第二層選單</span></a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="images/iot_icon/chart_circle.svg" alt="">
+                            <span>單機台工作看板</span>
+                        </a>
+                        <!-- level2 -->
+                        <ul>
+                            <li><a href="#"><span>第二層選單</span></a></li>
+                            <li><a href="#"><span>第二層選單</span></a></li>
+                            <li><a href="#"><span>第二層選單</span></a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="images/iot_icon/mobile.svg" alt="">
+                            <span>行動APP</span>
+                        </a>
+                        <!-- level2 -->
+                        <ul>
+                            <li><a href="#"><span>第二層選單</span></a></li>
+                            <li><a href="#"><span>第二層選單</span></a></li>
+                            <li><a href="#"><span>第二層選單</span></a></li>
+                        </ul>
+                    </li>
+                    <div class="divider">Widget</div>
+                    <li>
+                        <a href="#">
+                            <img src="images/iot_icon/combo.svg" alt="">
+                            <span>widget-指數為主軸</span>
+                        </a>
+                        <!-- level2 -->
+                        <ul>
+                            <li><a href="#"><span>多指數</span></a></li>
+                            <li><a href="#"><span>指數 + chart</span></a></li>
+                            <li><a href="#"><span>指數 + picture</span></a></li>
+                            <li><a href="#"><span>指數 + 燈號</span></a></li>
+                            <li><a href="#"><span>指數 + 進度條</span></a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="images/iot_icon/area.svg" alt="">
+                            <span>widget-Chart為主軸</span>
+                        </a>
+                        <!-- level2 -->
+                        <ul>
+                            <li><a href="#"><span>單一Chart</span></a></li>
+                            <li><a href="#"><span>雙Chart</span></a></li>
+                            <li><a href="#"><span>Chart + List</span></a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="images/iot_icon/line.svg" alt="">
+                            <span>widget-重覆小單元</span>
+                        </a>
+                        <!-- level2 -->
+                        <ul>
+                            <li><a href="#"><span>識別名稱+Chart</span></a></li>
+                            <li><a href="#"><span>識別名稱+燈號</span></a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="images/iot_icon/bar.svg" alt="">
+                            <span>widget-多操作情境</span>
+                        </a>
+                        <!-- level2 -->
+                        <ul>
+                            <li><a href="#"><span>多Tab切換</span></a></li>
+                            <li><a href="#"><span>時間軸</span></a></li>
+                            <li><a href="#"><span>表格清單</span></a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="images/iot_icon/widget.svg" alt="">
+                            <span>widget-Chart配色</span>
+                        </a>
+                        <!-- level2 -->
+                        <ul>
+                            <li><a href="light_bar.htm"><span>長條圖</span></a></li>
+                            <li><a href="light_line.htm"><span>折線圖</span></a></li>
+                            <li><a href="light_bar_line.htm"><span>長條結合折線圖</span></a></li>
+                            <li><a href="light_radar.htm"><span>雷達圖</span></a></li>
+                            <li><a href="light_plot.htm"><span>散點圖</span></a></li>
+                            <li><a href="light_boxplot.htm"><span>Boxplot</span></a></li>
+                            <li><a href="light_pie.htm"><span>圓餅圖</span></a></li>
+                        </ul>
+                    </li>
+                    <div class="divider">模組</div>
+                    <li>
+                        <a href="light_conponent.htm">
+                            <img src="images/iot_icon/grid.svg" alt="">
+                            <span>Components</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="light_gridsystem.htm">
+                            <img src="images/iot_icon/grid.svg" alt="">
+                            <span>格線系統</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </aside>
+        <!-- 主要內容數據區 -->
+        <div class="content">
+            <!-- breadcrumb路徑 -->
+            <div class="breadcrumb">
+                <ul>
+                    <li><a href="light.htm">首頁</a></li>
+                    <li><a href="#">節點</a></li>
+                    <li>節點</li>
+                </ul>
+            </div>
+            <!-- gird section -->
+            <div class="grid">
+                <div class="container">
+                    <div class="title">
+                        <h2>長條圖範例</h2>
+                    </div>
+                    <!-- flex-8-4 -->
+                    <div class="flex-8-4">
+                        <div class="col ">
+                            <div class="chart_block">
+                                <div class="chart_head">
+                                    <!-- 圖表標題 -->
+                                    <h3>長條圖</h3>
+                                    <!-- 圖表更新日期 -->
+                                    <div class="chart_info">
+                                        <div class="update">
+                                            <span>update:<time>2020/01/01 08:30:20</time></span>
+                                        </div>
+                                        <div class="question">
+                                            <a href="#"><img src="images/iot_icon/question.svg" alt=""></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="chart_content">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+                                    <!-- 長條圖 -->
+                                    <figure class="highcharts-figure">
+                                        <div id="basic_column1"></div>
+                                    </figure>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="chart_block">
+                                <div class="chart_head">
+                                    <!-- 圖表標題 -->
+                                    <h3>長條圖</h3>
+                                    <!-- 圖表更新日期 -->
+                                    <div class="chart_info">
+                                        <div class="update">
+                                            <span>update:<time>2020/01/01 08:30:20</time></span>
+                                        </div>
+                                        <div class="question">
+                                            <a href="#"><img src="images/iot_icon/question.svg" alt=""></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="chart_content">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+                                    <!-- 圓餅圖 -->
+                                    <figure class="highcharts-figure">
+                                        <div id="basic_column2"></div>
+                                    </figure>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- flex-4-4-4 -->
+                    <div class="flex-4-4-4">
+                        <div class="col">
+                            <div class="chart_block">
+                                <div class="chart_head">
+                                    <!-- 圖表標題 -->
+                                    <h3>長條圖</h3>
+                                    <!-- 圖表更新日期 -->
+                                    <div class="chart_info">
+                                        <div class="update">
+                                            <span>update:<time>2020/01/01 08:30:20</time></span>
+                                        </div>
+                                        <div class="question">
+                                            <a href="#"><img src="images/iot_icon/question.svg" alt=""></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="chart_content">
+                                    <!-- 散點圖 -->
+                                    <figure class="highcharts-figure">
+                                        <div id="basic_column3"></div>
+                                    </figure>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="chart_block">
+                                <div class="chart_head">
+                                    <!-- 圖表標題 -->
+                                    <h3>長條圖</h3>
+                                    <!-- 圖表更新日期 -->
+                                    <div class="chart_info">
+                                        <div class="update">
+                                            <span>update:<time>2020/01/01 08:30:20</time></span>
+                                        </div>
+                                        <div class="question">
+                                            <a href="#"><img src="images/iot_icon/question.svg" alt=""></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="chart_content">
+                                    <div class="chart_content">
+                                        <!-- 折線圖 -->
+                                        <figure class="highcharts-figure">
+                                            <div id="basic_column4"></div>
+                                        </figure>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="chart_block">
+                                <div class="chart_head">
+                                    <!-- 圖表標題 -->
+                                    <h3>長條圖</h3>
+                                    <!-- 圖表更新日期 -->
+                                    <div class="chart_info">
+                                        <div class="update">
+                                            <span>update:<time>2020/01/01 08:30:20</time></span>
+                                        </div>
+                                        <div class="question">
+                                            <a href="#"><img src="images/iot_icon/question.svg" alt=""></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="chart_content">
+                                    <!-- 雷達圖 -->
+                                    <figure class="highcharts-figure">
+                                        <div id="basic_column5"></div>
+                                    </figure>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- flex-6-6 -->
+                    <div class="flex-6-6">
+                        <div class="col">
+                            <div class="chart_block">
+                                <div class="chart_head">
+                                    <!-- 圖表標題 -->
+                                    <h3>長條圖</h3>
+                                    <!-- 圖表更新日期 -->
+                                    <div class="chart_info">
+                                        <div class="update">
+                                            <span>update:<time>2020/01/01 08:30:20</time></span>
+                                        </div>
+                                        <div class="question">
+                                            <a href="#"><img src="images/iot_icon/question.svg" alt=""></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="chart_content">
+                                    <div class="chart_content">
+                                        <!-- 折線圖 -->
+                                        <figure class="highcharts-figure">
+                                            <div id="basic_column6"></div>
+                                        </figure>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="chart_block">
+                                <div class="chart_head">
+                                    <!-- 圖表標題 -->
+                                    <h3>長條圖</h3>
+                                    <!-- 圖表更新日期 -->
+                                    <div class="chart_info">
+                                        <div class="update">
+                                            <span>update:<time>2020/01/01 08:30:20</time></span>
+                                        </div>
+                                        <div class="question">
+                                            <a href="#"><img src="images/iot_icon/question.svg" alt=""></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="chart_content">
+                                    <div class="chart_content">
+                                        <!-- 折線圖 -->
+                                        <figure class="highcharts-figure">
+                                            <div id="basic_column7"></div>
+                                        </figure>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- flex-12 -->
+                    <div class="flex-12">
+                        <div class="col">
+                            <div class="chart_block">
+                                <div class="chart_head">
+                                    <!-- 圖表標題 -->
+                                    <h3>長條圖</h3>
+                                    <!-- 圖表更新日期 -->
+                                    <div class="chart_info">
+                                        <div class="update">
+                                            <span>update:<time>2020/01/01 08:30:20</time></span>
+                                        </div>
+                                        <div class="question">
+                                            <a href="#"><img src="images/iot_icon/question.svg" alt=""></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="chart_content">
+                                    <div class="chart_content">
+                                        <!-- 折線圖 -->
+                                        <figure class="highcharts-figure">
+                                            <div id="basic_column8"></div>
+                                        </figure>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- flex-3-6-3 -->
+                    <div class="flex-3-6-3">
+                        <div class="col">
+                            <div class="chart_block">
+                                <div class="chart_head">
+                                    <!-- 圖表標題 -->
+                                    <h3>長條圖</h3>
+                                    <!-- 圖表更新日期 -->
+                                    <div class="chart_info">
+                                        <div class="update">
+                                            <span>update:<time>2020/01/01 08:30:20</time></span>
+                                        </div>
+                                        <div class="question">
+                                            <a href="#"><img src="images/iot_icon/question.svg" alt=""></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="chart_content">
+                                    <div class="chart_content">
+                                        <!-- 折線圖 -->
+                                        <figure class="highcharts-figure">
+                                            <div id="basic_column9"></div>
+                                        </figure>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="chart_block">
+                                <div class="chart_head">
+                                    <!-- 圖表標題 -->
+                                    <h3>長條圖</h3>
+                                    <!-- 圖表更新日期 -->
+                                    <div class="chart_info">
+                                        <div class="update">
+                                            <span>update:<time>2020/01/01 08:30:20</time></span>
+                                        </div>
+                                        <div class="question">
+                                            <a href="#"><img src="images/iot_icon/question.svg" alt=""></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="chart_content">
+                                    <div class="chart_content">
+                                        <!-- 折線圖 -->
+                                        <figure class="highcharts-figure">
+                                            <div id="basic_column10"></div>
+                                        </figure>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="chart_block">
+                                <div class="chart_head">
+                                    <!-- 圖表標題 -->
+                                    <h3>長條圖</h3>
+                                    <!-- 圖表更新日期 -->
+                                    <div class="chart_info">
+                                        <div class="update">
+                                            <span>update:<time>2020/01/01 08:30:20</time></span>
+                                        </div>
+                                        <div class="question">
+                                            <a href="#"><img src="images/iot_icon/question.svg" alt=""></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="chart_content">
+                                    <div class="chart_content">
+                                        <!-- 折線圖 -->
+                                        <figure class="highcharts-figure">
+                                            <div id="basic_column11"></div>
+                                        </figure>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- JS-->
+            <script src="js/jquery-3.3.1.min.js"></script>
+            <script src="vendor/jquery.easing.min.js"></script>
+            <!-- highchart plugin -->
+            <script src="https://code.highcharts.com/highcharts.js"></script>
+            <script src="https://code.highcharts.com/highcharts-more.js"></script>
+            <script src="https://code.highcharts.com/modules/solid-gauge.js"></script>
+            <script src="https://code.highcharts.com/modules/exporting.js"></script>
+            <script src="https://code.highcharts.com/modules/export-data.js"></script>
+            <script src="https://code.highcharts.com/modules/accessibility.js"></script>
+            <script src="https://code.highcharts.com/modules/pattern-fill.js"></script>
+            <!-- hightchart setting -->
+            <script src="js/chart_setting.js"></script>
+            <script>
+            //圖表變數
+            var _Color = ['#20A4F3', '#54CEC3', '#ffbc08', '#fe7b62', '#00b44b', '#2869b9', '#d84400', '#009e7a', '#2e3c56', '#754a28'];
+            // 基本長條圖
+            Highcharts.chart('basic_column1', {
+                chart: {
+                    type: 'column'
+                },
+                title: {
+                    text: '圖表標題(可省略)'
+                },
+                subtitle: {
+                    text: ''
+                },
+                colors: _Color,
+                xAxis: {
+                    categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
+                    crosshair: true
+                },
+                yAxis: {
+                    min: 0,
+                    title: {
+                        text: 'Rainfall (mm)'
+                    }
+                },
+                tooltip: {
+                    headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
+                    pointFormat: '<tr><td style="color:{series.color};padding:0">{series.name}: </td>' + '<td style="padding:0"><b>{point.y:.1f} mm</b></td></tr>',
+                    footerFormat: '</table>',
+                    shared: true,
+                    useHTML: true
+                },
+                plotOptions: {
+                    column: {
+                        pointPadding: 0.2,
+                        borderWidth: 0
+                    }
+                },
+                series: [{
+                    name: 'Tokyo',
+                    data: [49.9, 71.5, 106.4, 129.2, 144.0, 176.0, 135.6, 148.5, 216.4, 194.1, 95.6, 54.4]
+                }, {
+                    name: 'New York',
+                    data: [83.6, 78.8, 98.5, 93.4, 106.0, 84.5, 105.0, 104.3, 91.2, 83.5, 106.6, 92.3]
+                }, {
+                    name: 'London',
+                    data: [48.9, 38.8, 39.3, 41.4, 47.0, 48.3, 59.0, 59.6, 52.4, 65.2, 59.3, 51.2]
+                }, {
+                    name: 'Berlin',
+                    data: [42.4, 33.2, 34.5, 39.7, 52.6, 75.5, 57.4, 60.4, 47.6, 39.1, 46.8, 51.1]
+                }]
+            });
+            Highcharts.chart('basic_column2', {
+                chart: {
+                    type: 'column'
+                },
+                title: {
+                    text: '圖表標題(可省略)'
+                },
+                subtitle: {
+                    text: ''
+                },
+                colors: _Color,
+                xAxis: {
+                    categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
+                    crosshair: true
+                },
+                yAxis: {
+                    min: 0,
+                    title: {
+                        text: 'Rainfall (mm)'
+                    }
+                },
+                tooltip: {
+                    headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
+                    pointFormat: '<tr><td style="color:{series.color};padding:0">{series.name}: </td>' + '<td style="padding:0"><b>{point.y:.1f} mm</b></td></tr>',
+                    footerFormat: '</table>',
+                    shared: true,
+                    useHTML: true
+                },
+                plotOptions: {
+                    column: {
+                        pointPadding: 0.2,
+                        borderWidth: 0
+                    }
+                },
+                series: [{
+                    name: 'Tokyo',
+                    data: [49.9, 71.5, 106.4, 129.2, 144.0, 176.0, 135.6, 148.5, 216.4, 194.1, 95.6, 54.4]
+                }, {
+                    name: 'New York',
+                    data: [83.6, 78.8, 98.5, 93.4, 106.0, 84.5, 105.0, 104.3, 91.2, 83.5, 106.6, 92.3]
+                }, {
+                    name: 'London',
+                    data: [48.9, 38.8, 39.3, 41.4, 47.0, 48.3, 59.0, 59.6, 52.4, 65.2, 59.3, 51.2]
+                }, {
+                    name: 'Berlin',
+                    data: [42.4, 33.2, 34.5, 39.7, 52.6, 75.5, 57.4, 60.4, 47.6, 39.1, 46.8, 51.1]
+                }]
+            });
+            Highcharts.chart('basic_column3', {
+                chart: {
+                    type: 'column'
+                },
+                title: {
+                    text: '圖表標題(可省略)'
+                },
+                subtitle: {
+                    text: ''
+                },
+                colors: _Color,
+                xAxis: {
+                    categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
+                    crosshair: true
+                },
+                yAxis: {
+                    min: 0,
+                    title: {
+                        text: 'Rainfall (mm)'
+                    }
+                },
+                tooltip: {
+                    headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
+                    pointFormat: '<tr><td style="color:{series.color};padding:0">{series.name}: </td>' + '<td style="padding:0"><b>{point.y:.1f} mm</b></td></tr>',
+                    footerFormat: '</table>',
+                    shared: true,
+                    useHTML: true
+                },
+                plotOptions: {
+                    column: {
+                        pointPadding: 0.2,
+                        borderWidth: 0
+                    }
+                },
+                series: [{
+                    name: 'Tokyo',
+                    data: [49.9, 71.5, 106.4, 129.2, 144.0, 176.0, 135.6, 148.5, 216.4, 194.1, 95.6, 54.4]
+                }, {
+                    name: 'New York',
+                    data: [83.6, 78.8, 98.5, 93.4, 106.0, 84.5, 105.0, 104.3, 91.2, 83.5, 106.6, 92.3]
+                }, {
+                    name: 'London',
+                    data: [48.9, 38.8, 39.3, 41.4, 47.0, 48.3, 59.0, 59.6, 52.4, 65.2, 59.3, 51.2]
+                }, {
+                    name: 'Berlin',
+                    data: [42.4, 33.2, 34.5, 39.7, 52.6, 75.5, 57.4, 60.4, 47.6, 39.1, 46.8, 51.1]
+                }]
+            });
+            Highcharts.chart('basic_column4', {
+                chart: {
+                    type: 'column'
+                },
+                title: {
+                    text: '圖表標題(可省略)'
+                },
+                subtitle: {
+                    text: ''
+                },
+                colors: _Color,
+                xAxis: {
+                    categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
+                    crosshair: true
+                },
+                yAxis: {
+                    min: 0,
+                    title: {
+                        text: 'Rainfall (mm)'
+                    }
+                },
+                tooltip: {
+                    headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
+                    pointFormat: '<tr><td style="color:{series.color};padding:0">{series.name}: </td>' + '<td style="padding:0"><b>{point.y:.1f} mm</b></td></tr>',
+                    footerFormat: '</table>',
+                    shared: true,
+                    useHTML: true
+                },
+                plotOptions: {
+                    column: {
+                        pointPadding: 0.2,
+                        borderWidth: 0
+                    }
+                },
+                series: [{
+                    name: 'Tokyo',
+                    data: [49.9, 71.5, 106.4, 129.2, 144.0, 176.0, 135.6, 148.5, 216.4, 194.1, 95.6, 54.4]
+                }, {
+                    name: 'New York',
+                    data: [83.6, 78.8, 98.5, 93.4, 106.0, 84.5, 105.0, 104.3, 91.2, 83.5, 106.6, 92.3]
+                }, {
+                    name: 'London',
+                    data: [48.9, 38.8, 39.3, 41.4, 47.0, 48.3, 59.0, 59.6, 52.4, 65.2, 59.3, 51.2]
+                }, {
+                    name: 'Berlin',
+                    data: [42.4, 33.2, 34.5, 39.7, 52.6, 75.5, 57.4, 60.4, 47.6, 39.1, 46.8, 51.1]
+                }]
+            });
+            Highcharts.chart('basic_column5', {
+                chart: {
+                    type: 'column'
+                },
+                title: {
+                    text: '圖表標題(可省略)'
+                },
+                subtitle: {
+                    text: ''
+                },
+                colors: _Color,
+                xAxis: {
+                    categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
+                    crosshair: true
+                },
+                yAxis: {
+                    min: 0,
+                    title: {
+                        text: 'Rainfall (mm)'
+                    }
+                },
+                tooltip: {
+                    headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
+                    pointFormat: '<tr><td style="color:{series.color};padding:0">{series.name}: </td>' + '<td style="padding:0"><b>{point.y:.1f} mm</b></td></tr>',
+                    footerFormat: '</table>',
+                    shared: true,
+                    useHTML: true
+                },
+                plotOptions: {
+                    column: {
+                        pointPadding: 0.2,
+                        borderWidth: 0
+                    }
+                },
+                series: [{
+                    name: 'Tokyo',
+                    data: [49.9, 71.5, 106.4, 129.2, 144.0, 176.0, 135.6, 148.5, 216.4, 194.1, 95.6, 54.4]
+                }, {
+                    name: 'New York',
+                    data: [83.6, 78.8, 98.5, 93.4, 106.0, 84.5, 105.0, 104.3, 91.2, 83.5, 106.6, 92.3]
+                }, {
+                    name: 'London',
+                    data: [48.9, 38.8, 39.3, 41.4, 47.0, 48.3, 59.0, 59.6, 52.4, 65.2, 59.3, 51.2]
+                }, {
+                    name: 'Berlin',
+                    data: [42.4, 33.2, 34.5, 39.7, 52.6, 75.5, 57.4, 60.4, 47.6, 39.1, 46.8, 51.1]
+                }]
+            });
+            Highcharts.chart('basic_column6', {
+                chart: {
+                    type: 'column'
+                },
+                title: {
+                    text: '圖表標題(可省略)'
+                },
+                subtitle: {
+                    text: ''
+                },
+                colors: _Color,
+                xAxis: {
+                    categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
+                    crosshair: true
+                },
+                yAxis: {
+                    min: 0,
+                    title: {
+                        text: 'Rainfall (mm)'
+                    }
+                },
+                tooltip: {
+                    headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
+                    pointFormat: '<tr><td style="color:{series.color};padding:0">{series.name}: </td>' + '<td style="padding:0"><b>{point.y:.1f} mm</b></td></tr>',
+                    footerFormat: '</table>',
+                    shared: true,
+                    useHTML: true
+                },
+                plotOptions: {
+                    column: {
+                        pointPadding: 0.2,
+                        borderWidth: 0
+                    }
+                },
+                series: [{
+                    name: 'Tokyo',
+                    data: [49.9, 71.5, 106.4, 129.2, 144.0, 176.0, 135.6, 148.5, 216.4, 194.1, 95.6, 54.4]
+                }, {
+                    name: 'New York',
+                    data: [83.6, 78.8, 98.5, 93.4, 106.0, 84.5, 105.0, 104.3, 91.2, 83.5, 106.6, 92.3]
+                }, {
+                    name: 'London',
+                    data: [48.9, 38.8, 39.3, 41.4, 47.0, 48.3, 59.0, 59.6, 52.4, 65.2, 59.3, 51.2]
+                }, {
+                    name: 'Berlin',
+                    data: [42.4, 33.2, 34.5, 39.7, 52.6, 75.5, 57.4, 60.4, 47.6, 39.1, 46.8, 51.1]
+                }]
+            });
+            Highcharts.chart('basic_column7', {
+                chart: {
+                    type: 'column'
+                },
+                title: {
+                    text: '圖表標題(可省略)'
+                },
+                subtitle: {
+                    text: ''
+                },
+                colors: _Color,
+                xAxis: {
+                    categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
+                    crosshair: true
+                },
+                yAxis: {
+                    min: 0,
+                    title: {
+                        text: 'Rainfall (mm)'
+                    }
+                },
+                tooltip: {
+                    headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
+                    pointFormat: '<tr><td style="color:{series.color};padding:0">{series.name}: </td>' + '<td style="padding:0"><b>{point.y:.1f} mm</b></td></tr>',
+                    footerFormat: '</table>',
+                    shared: true,
+                    useHTML: true
+                },
+                plotOptions: {
+                    column: {
+                        pointPadding: 0.2,
+                        borderWidth: 0
+                    }
+                },
+                series: [{
+                    name: 'Tokyo',
+                    data: [49.9, 71.5, 106.4, 129.2, 144.0, 176.0, 135.6, 148.5, 216.4, 194.1, 95.6, 54.4]
+                }, {
+                    name: 'New York',
+                    data: [83.6, 78.8, 98.5, 93.4, 106.0, 84.5, 105.0, 104.3, 91.2, 83.5, 106.6, 92.3]
+                }, {
+                    name: 'London',
+                    data: [48.9, 38.8, 39.3, 41.4, 47.0, 48.3, 59.0, 59.6, 52.4, 65.2, 59.3, 51.2]
+                }, {
+                    name: 'Berlin',
+                    data: [42.4, 33.2, 34.5, 39.7, 52.6, 75.5, 57.4, 60.4, 47.6, 39.1, 46.8, 51.1]
+                }]
+            });
+            Highcharts.chart('basic_column8', {
+                chart: {
+                    type: 'column'
+                },
+                title: {
+                    text: '圖表標題(可省略)'
+                },
+                subtitle: {
+                    text: ''
+                },
+                colors: _Color,
+                xAxis: {
+                    categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
+                    crosshair: true
+                },
+                yAxis: {
+                    min: 0,
+                    title: {
+                        text: 'Rainfall (mm)'
+                    }
+                },
+                tooltip: {
+                    headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
+                    pointFormat: '<tr><td style="color:{series.color};padding:0">{series.name}: </td>' + '<td style="padding:0"><b>{point.y:.1f} mm</b></td></tr>',
+                    footerFormat: '</table>',
+                    shared: true,
+                    useHTML: true
+                },
+                plotOptions: {
+                    column: {
+                        pointPadding: 0.2,
+                        borderWidth: 0
+                    }
+                },
+                series: [{
+                    name: 'Tokyo',
+                    data: [49.9, 71.5, 106.4, 129.2, 144.0, 176.0, 135.6, 148.5, 216.4, 194.1, 95.6, 54.4]
+                }, {
+                    name: 'New York',
+                    data: [83.6, 78.8, 98.5, 93.4, 106.0, 84.5, 105.0, 104.3, 91.2, 83.5, 106.6, 92.3]
+                }, {
+                    name: 'London',
+                    data: [48.9, 38.8, 39.3, 41.4, 47.0, 48.3, 59.0, 59.6, 52.4, 65.2, 59.3, 51.2]
+                }, {
+                    name: 'Berlin',
+                    data: [42.4, 33.2, 34.5, 39.7, 52.6, 75.5, 57.4, 60.4, 47.6, 39.1, 46.8, 51.1]
+                }]
+            });
+            Highcharts.chart('basic_column9', {
+                chart: {
+                    type: 'column'
+                },
+                title: {
+                    text: '圖表標題(可省略)'
+                },
+                subtitle: {
+                    text: ''
+                },
+                colors: _Color,
+                xAxis: {
+                    categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
+                    crosshair: true
+                },
+                yAxis: {
+                    min: 0,
+                    title: {
+                        text: 'Rainfall (mm)'
+                    }
+                },
+                tooltip: {
+                    headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
+                    pointFormat: '<tr><td style="color:{series.color};padding:0">{series.name}: </td>' + '<td style="padding:0"><b>{point.y:.1f} mm</b></td></tr>',
+                    footerFormat: '</table>',
+                    shared: true,
+                    useHTML: true
+                },
+                plotOptions: {
+                    column: {
+                        pointPadding: 0.2,
+                        borderWidth: 0
+                    }
+                },
+                series: [{
+                    name: 'Tokyo',
+                    data: [49.9, 71.5, 106.4, 129.2, 144.0, 176.0, 135.6, 148.5, 216.4, 194.1, 95.6, 54.4]
+                }, {
+                    name: 'New York',
+                    data: [83.6, 78.8, 98.5, 93.4, 106.0, 84.5, 105.0, 104.3, 91.2, 83.5, 106.6, 92.3]
+                }, {
+                    name: 'London',
+                    data: [48.9, 38.8, 39.3, 41.4, 47.0, 48.3, 59.0, 59.6, 52.4, 65.2, 59.3, 51.2]
+                }, {
+                    name: 'Berlin',
+                    data: [42.4, 33.2, 34.5, 39.7, 52.6, 75.5, 57.4, 60.4, 47.6, 39.1, 46.8, 51.1]
+                }]
+            });
+            Highcharts.chart('basic_column10', {
+                chart: {
+                    type: 'column'
+                },
+                title: {
+                    text: '圖表標題(可省略)'
+                },
+                subtitle: {
+                    text: ''
+                },
+                colors: _Color,
+                xAxis: {
+                    categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
+                    crosshair: true
+                },
+                yAxis: {
+                    min: 0,
+                    title: {
+                        text: 'Rainfall (mm)'
+                    }
+                },
+                tooltip: {
+                    headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
+                    pointFormat: '<tr><td style="color:{series.color};padding:0">{series.name}: </td>' + '<td style="padding:0"><b>{point.y:.1f} mm</b></td></tr>',
+                    footerFormat: '</table>',
+                    shared: true,
+                    useHTML: true
+                },
+                plotOptions: {
+                    column: {
+                        pointPadding: 0.2,
+                        borderWidth: 0
+                    }
+                },
+                series: [{
+                    name: 'Tokyo',
+                    data: [49.9, 71.5, 106.4, 129.2, 144.0, 176.0, 135.6, 148.5, 216.4, 194.1, 95.6, 54.4]
+                }, {
+                    name: 'New York',
+                    data: [83.6, 78.8, 98.5, 93.4, 106.0, 84.5, 105.0, 104.3, 91.2, 83.5, 106.6, 92.3]
+                }, {
+                    name: 'London',
+                    data: [48.9, 38.8, 39.3, 41.4, 47.0, 48.3, 59.0, 59.6, 52.4, 65.2, 59.3, 51.2]
+                }, {
+                    name: 'Berlin',
+                    data: [42.4, 33.2, 34.5, 39.7, 52.6, 75.5, 57.4, 60.4, 47.6, 39.1, 46.8, 51.1]
+                }]
+            });
+            Highcharts.chart('basic_column11', {
+                chart: {
+                    type: 'column'
+                },
+                title: {
+                    text: '圖表標題(可省略)'
+                },
+                subtitle: {
+                    text: ''
+                },
+                colors: _Color,
+                xAxis: {
+                    categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
+                    crosshair: true
+                },
+                yAxis: {
+                    min: 0,
+                    title: {
+                        text: 'Rainfall (mm)'
+                    }
+                },
+                tooltip: {
+                    headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
+                    pointFormat: '<tr><td style="color:{series.color};padding:0">{series.name}: </td>' + '<td style="padding:0"><b>{point.y:.1f} mm</b></td></tr>',
+                    footerFormat: '</table>',
+                    shared: true,
+                    useHTML: true
+                },
+                plotOptions: {
+                    column: {
+                        pointPadding: 0.2,
+                        borderWidth: 0
+                    }
+                },
+                series: [{
+                    name: 'Tokyo',
+                    data: [49.9, 71.5, 106.4, 129.2, 144.0, 176.0, 135.6, 148.5, 216.4, 194.1, 95.6, 54.4]
+                }, {
+                    name: 'New York',
+                    data: [83.6, 78.8, 98.5, 93.4, 106.0, 84.5, 105.0, 104.3, 91.2, 83.5, 106.6, 92.3]
+                }, {
+                    name: 'London',
+                    data: [48.9, 38.8, 39.3, 41.4, 47.0, 48.3, 59.0, 59.6, 52.4, 65.2, 59.3, 51.2]
+                }, {
+                    name: 'Berlin',
+                    data: [42.4, 33.2, 34.5, 39.7, 52.6, 75.5, 57.4, 60.4, 47.6, 39.1, 46.8, 51.1]
+                }]
+            });
+            </script>
+            <!-- template customize js -->
+            <script src="js/customize.js"></script>
+</body>
