@@ -1,0 +1,404 @@
+<!doctype html>
+<html lang="zh-Hant">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>AI IOT</title>
+    <!--HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries [if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->
+    <!-- hyUI css -->
+    <link rel="stylesheet" href="css/iot.css">
+    <!-- favicon -->
+    <link href="images/favicon.png" rel="icon" type="image/x-icon">
+    <!-- high light -->
+    <link rel="stylesheet" href="vendor/highlight/github-gist.css">
+</head>
+<!-- 切換亮色與暗色，亮色不用加註，暗色 class="dark" -->
+
+<body>
+    <div class="wrapper">
+        <!-- header -->
+        <header>
+            <div class="container">
+                <h1><a href="index.htm"><img src="images/product_logo_01.png" alt=""><span>機加工雲</span></a></h1>
+                <!-- 右側功能 -->
+                <div class="control_panel">
+                    <div class="item alert">
+                        <a href="#">
+                            <img src="images/iot_icon/alert.svg" alt="">
+                        </a>
+                        <span>100</span>
+                    </div>
+                    <div class="item account">
+                        <a href="#">
+                            <img src="images/man.svg" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- 側欄選單 -->
+        <aside>
+            <!-- toggle_menu_btn 收合按鈕 -->
+            <a href="#" class="toggle_menu_btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </a>
+            <!-- menu -->
+            <nav>
+                <!-- level1 -->
+                <ul>
+                    <li>
+                        <a href="light.htm">
+                            <img src="images/icon/icon_home.svg" alt="">
+                            <span>回首頁</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="images/iot_icon/grid.svg" alt="">
+                            <span>多機台工作看板</span>
+                        </a>
+                        <!-- level2 -->
+                        <ul>
+                            <li><a href="#"><span>第二層選單</span></a></li>
+                            <li><a href="#"><span>第二層選單</span></a></li>
+                            <li><a href="#"><span>第二層選單</span></a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="images/iot_icon/chart_circle.svg" alt="">
+                            <span>單機台工作看板</span>
+                        </a>
+                        <!-- level2 -->
+                        <ul>
+                            <li><a href="#"><span>第二層選單</span></a></li>
+                            <li><a href="#"><span>第二層選單</span></a></li>
+                            <li><a href="#"><span>第二層選單</span></a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="images/iot_icon/mobile.svg" alt="">
+                            <span>行動APP</span>
+                        </a>
+                        <!-- level2 -->
+                        <ul>
+                            <li><a href="#"><span>第二層選單</span></a></li>
+                            <li><a href="#"><span>第二層選單</span></a></li>
+                            <li><a href="#"><span>第二層選單</span></a></li>
+                        </ul>
+                    </li>
+                    <div class="divider">Widget</div>
+                    <li>
+                        <a href="#">
+                            <img src="images/iot_icon/combo.svg" alt="">
+                            <span>widget-指數為主軸</span>
+                        </a>
+                        <!-- level2 -->
+                        <ul>
+                            <li><a href="#"><span>多指數</span></a></li>
+                            <li><a href="#"><span>指數 + chart</span></a></li>
+                            <li><a href="#"><span>指數 + picture</span></a></li>
+                            <li><a href="#"><span>指數 + 燈號</span></a></li>
+                            <li><a href="#"><span>指數 + 進度條</span></a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="images/iot_icon/area.svg" alt="">
+                            <span>widget-Chart為主軸</span>
+                        </a>
+                        <!-- level2 -->
+                        <ul>
+                            <li><a href="#"><span>單一Chart</span></a></li>
+                            <li><a href="#"><span>雙Chart</span></a></li>
+                            <li><a href="#"><span>Chart + List</span></a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="images/iot_icon/line.svg" alt="">
+                            <span>widget-重覆小單元</span>
+                        </a>
+                        <!-- level2 -->
+                        <ul>
+                            <li><a href="#"><span>識別名稱+Chart</span></a></li>
+                            <li><a href="#"><span>識別名稱+燈號</span></a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="images/iot_icon/bar.svg" alt="">
+                            <span>widget-多操作情境</span>
+                        </a>
+                        <!-- level2 -->
+                        <ul>
+                            <li><a href="#"><span>多Tab切換</span></a></li>
+                            <li><a href="#"><span>時間軸</span></a></li>
+                            <li><a href="#"><span>表格清單</span></a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="images/iot_icon/widget.svg" alt="">
+                            <span>widget-Chart配色</span>
+                        </a>
+                        <!-- level2 -->
+                        <ul>
+                            <li><a href="light_bar.htm"><span>長條圖</span></a></li>
+                            <li><a href="light_line.htm"><span>折線圖</span></a></li>
+                            <li><a href="light_bar_line.htm"><span>長條結合折線圖</span></a></li>
+                            <li><a href="light_radar.htm"><span>雷達圖</span></a></li>
+                            <li><a href="light_plot.htm"><span>散點圖</span></a></li>
+                            <li><a href="light_boxplot.htm"><span>Boxplot</span></a></li>
+                            <li><a href="light_pie.htm"><span>圓餅圖</span></a></li>
+                        </ul>
+                    </li>
+                    <div class="divider">模組</div>
+                    <li>
+                        <a href="light_conponent.htm">
+                            <img src="images/iot_icon/folder.svg" alt="">
+                            <span>Components</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="light_gridsystem.htm">
+                            <img src="images/iot_icon/template.svg" alt="">
+                            <span>格線系統</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="light_setting.htm">
+                            <img src="images/iot_icon/setting.svg" alt="">
+                            <span>圖表設定</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </aside>
+        <!-- 主要內容數據區 -->
+        <div class="content">
+            <!-- breadcrumb路徑 -->
+            <div class="breadcrumb">
+                <ul>
+                    <li><a href="light.htm">首頁</a></li>
+                    <li><a href="#">節點</a></li>
+                    <li>節點</li>
+                </ul>
+            </div>
+            <!-- gird section -->
+            <div class="grid">
+                <div class="container">
+                    <div class="title">
+                        <h2>Components</h2>
+                    </div>
+                    <!--  <div class="demo_info">
+                        <p>圖表設定可用adclass方式，設定高度，範例如下：</p>
+                        <pre><code class="language-html">&lt;!-- 圖表400px高度 --&gt;
+&lt;figure class="highcharts-figure"&gt;
+    &lt;div id="axes_line_column2" class="h_400"&gt;&lt;/div&gt;
+&lt;/figure&gt;</code></pre>
+                    </div>
+                    <div class="demo_info">
+                        <pre><code class="language-html">&lt;!-- 【預設】圖表300px高度，不用設定classname --&gt;
+&lt;figure class="highcharts-figure"&gt;
+    &lt;div id="axes_line_column2"&gt;&lt;/div&gt;
+&lt;/figure&gt;</code></pre>
+                    </div>
+                    <div class="demo_info">
+                        <pre><code class="language-html">&lt;!-- 圖表200px高度 --&gt;
+&lt;figure class="highcharts-figure"&gt;
+    &lt;div id="axes_line_column2" class="h_200"&gt;&lt;/div&gt;
+&lt;/figure&gt;</code></pre>
+                    </div> -->
+                </div>
+                <!-- flex-6-6-->
+                <div class="flex-6-6">
+                    <div class="col">
+                        <div class="chart_block">
+                            <div class="chart_head">
+                                <!-- 標題 -->
+                                <h3>表格樣式</h3>
+                                <!-- 圖表更新日期 -->
+                                <div class="chart_info">
+                                    <div class="update">
+                                        <span>update:<time>2020/01/01 08:30:20</time></span>
+                                    </div>
+                                    <div class="question">
+                                        <a href="#"><img src="images/iot_icon/question.svg" alt=""></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="chart_content">
+                                <!-- table -->
+                                <div class="table_wrapper">
+                                    <table class="table_hover">
+                                        <thead>
+                                            <tr>
+                                                <th>設備</th>
+                                                <th>刀號</th>
+                                                <th>時間</th>
+                                                <th>實際壽命</th>
+                                                <th>額定壽命</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>D02</td>
+                                                <td>T2-103</td>
+                                                <td><time>01/13 08:00</time></td>
+                                                <td>285</td>
+                                                <td>276</td>
+                                            </tr>
+                                            <tr>
+                                                <td>D02</td>
+                                                <td>T2-104</td>
+                                                <td><time>01/13 08:00</time></td>
+                                                <td>275</td>
+                                                <td>276</td>
+                                            </tr>
+                                            <tr>
+                                                <td>D02</td>
+                                                <td>T2-105</td>
+                                                <td><time>01/13 08:00</time></td>
+                                                <td>276</td>
+                                                <td>276</td>
+                                            </tr>
+                                            <tr>
+                                                <td>D02</td>
+                                                <td>T2-105</td>
+                                                <td><time>01/13 08:00</time></td>
+                                                <td>276</td>
+                                                <td>276</td>
+                                            </tr>
+                                            <tr>
+                                                <td>D02</td>
+                                                <td>T2-105</td>
+                                                <td><time>01/13 08:00</time></td>
+                                                <td>276</td>
+                                                <td>276</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="chart_block">
+                            <div class="chart_head">
+                                <!-- 標題 -->
+                                <h3>標籤樣式</h3>
+                                <!-- 圖表更新日期 -->
+                                <div class="chart_info">
+                                    <div class="update">
+                                        <span>update:<time>2020/01/01 08:30:20</time></span>
+                                    </div>
+                                    <div class="question">
+                                        <a href="#"><img src="images/iot_icon/question.svg" alt=""></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="chart_content">
+                                <!-- tag 標籤 -->
+                                <!-- <p>置左</p> -->
+                                <div class="tag">
+                                    <ul>
+                                        <li class="active"><a href="#">標籤1</a></li>
+                                        <li><a href="#">標籤2</a></li>
+                                        <li><a href="#">標籤3</a></li>
+                                        <li><a href="#">標籤4</a></li>
+                                        <li><a href="#">標籤5</a></li>
+                                    </ul>
+                                </div>
+                                <!-- tag 標籤 -->
+                                <!-- <p>置中</p>
+                                <div class="tag text-center">
+                                    <ul>
+                                        <li class="active"><a href="#">標籤1</a></li>
+                                        <li><a href="#">標籤2</a></li>
+                                        <li><a href="#">標籤3</a></li>
+                                        <li><a href="#">標籤4</a></li>
+                                        <li><a href="#">標籤5</a></li>
+                                    </ul>
+                                </div> -->
+                                <!-- tag 標籤 -->
+                               <!--  <p>置右</p>
+                                <div class="tag text-right">
+                                    <ul>
+                                        <li class="active"><a href="#">標籤1</a></li>
+                                        <li><a href="#">標籤2</a></li>
+                                        <li><a href="#">標籤3</a></li>
+                                        <li><a href="#">標籤4</a></li>
+                                        <li><a href="#">標籤5</a></li>
+                                    </ul>
+                                </div> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- flex-6-6-->
+                <div class="flex-6-6">
+                    <div class="col">
+                        <div class="chart_block">
+                            <div class="chart_head">
+                                <!-- 標題 -->
+                                <h3>按鈕樣式</h3>
+                                <!-- 圖表更新日期 -->
+                                <div class="chart_info">
+                                    <div class="update">
+                                        <span>update:<time>2020/01/01 08:30:20</time></span>
+                                    </div>
+                                    <div class="question">
+                                        <a href="#"><img src="images/iot_icon/question.svg" alt=""></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="chart_content">
+                                <div class="btn_grp">
+                                    <a class="btn">Button</a>
+                                    <a class="btn btn-blue">Button</a>
+                                    <a class="btn btn-green">Button</a>
+                                    <a class="btn btn-orange">Button</a>
+                                    <a class="btn btn-yellow">Button</a>
+                                    <a class="btn btn-purple">Button</a>
+                                    <a class="btn btn-red">Button</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="chart_block">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- JS-->
+            <script src="js/jquery-3.3.1.min.js"></script>
+            <script src="vendor/jquery.easing.min.js"></script>
+            <!-- highchart plugin -->
+            <script src="https://code.highcharts.com/highcharts.js"></script>
+            <script src="https://code.highcharts.com/highcharts-more.js"></script>
+            <script src="https://code.highcharts.com/modules/solid-gauge.js"></script>
+            <script src="https://code.highcharts.com/modules/exporting.js"></script>
+            <script src="https://code.highcharts.com/modules/export-data.js"></script>
+            <script src="https://code.highcharts.com/modules/accessibility.js"></script>
+            <script src="https://code.highcharts.com/modules/pattern-fill.js"></script>
+            <!-- hightchart setting -->
+            <script src="js/chart_setting.js"></script>
+            <!-- template customize js -->
+            <script src="js/customize.js"></script>
+            <!-- highlight -->
+            <script src="vendor/highlight/highlight.pack.js"></script>
+            <script>
+            hljs.initHighlightingOnLoad();
+            </script>
+</body>

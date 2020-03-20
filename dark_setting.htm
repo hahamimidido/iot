@@ -1,0 +1,541 @@
+<!doctype html>
+<html lang="zh-Hant">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>AI IOT</title>
+    <!--HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries [if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->
+    <!-- hyUI css -->
+    <link rel="stylesheet" href="css/iot.css">
+    <!-- favicon -->
+    <link href="images/favicon.png" rel="icon" type="image/x-icon">
+    <!-- high light -->
+    <link rel="stylesheet" href="vendor/highlight/monokai-sublime.css">
+</head>
+<!-- 切換亮色與暗色，亮色不用加註，暗色 class="dark" -->
+
+<body class="dark">
+    <div class="wrapper">
+        <!-- header -->
+        <header>
+            <div class="container">
+                <h1><a href="index.htm"><img src="images/product_logo_01.png" alt=""><span>機加工雲</span></a></h1>
+                <!-- 右側功能 -->
+                <div class="control_panel">
+                    <div class="item alert">
+                        <a href="#">
+                            <img src="images/iot_icon/alert.svg" alt="">
+                        </a>
+                        <span>100</span>
+                    </div>
+                    <div class="item account">
+                        <a href="#">
+                            <img src="images/man.svg" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- 側欄選單 -->
+        <aside>
+            <!-- toggle_menu_btn 收合按鈕 -->
+            <a href="#" class="toggle_menu_btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </a>
+            <!-- menu -->
+            <nav>
+                <!-- level1 -->
+                <ul>
+                    <li>
+                        <a href="dark.htm">
+                            <img src="images/icon/icon_home.svg" alt="">
+                            <span>回首頁</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="images/iot_icon/grid.svg" alt="">
+                            <span>多機台工作看板</span>
+                        </a>
+                        <!-- level2 -->
+                        <ul>
+                            <li><a href="#"><span>第二層選單</span></a></li>
+                            <li><a href="#"><span>第二層選單</span></a></li>
+                            <li><a href="#"><span>第二層選單</span></a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="images/iot_icon/chart_circle.svg" alt="">
+                            <span>單機台工作看板</span>
+                        </a>
+                        <!-- level2 -->
+                        <ul>
+                            <li><a href="#"><span>第二層選單</span></a></li>
+                            <li><a href="#"><span>第二層選單</span></a></li>
+                            <li><a href="#"><span>第二層選單</span></a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="images/iot_icon/mobile.svg" alt="">
+                            <span>行動APP</span>
+                        </a>
+                        <!-- level2 -->
+                        <ul>
+                            <li><a href="#"><span>第二層選單</span></a></li>
+                            <li><a href="#"><span>第二層選單</span></a></li>
+                            <li><a href="#"><span>第二層選單</span></a></li>
+                        </ul>
+                    </li>
+                    <div class="divider">Widget</div>
+                    <li>
+                        <a href="#">
+                            <img src="images/iot_icon/combo.svg" alt="">
+                            <span>widget-指數為主軸</span>
+                        </a>
+                        <!-- level2 -->
+                        <ul>
+                            <li><a href="#"><span>多指數</span></a></li>
+                            <li><a href="#"><span>指數 + chart</span></a></li>
+                            <li><a href="#"><span>指數 + picture</span></a></li>
+                            <li><a href="#"><span>指數 + 燈號</span></a></li>
+                            <li><a href="#"><span>指數 + 進度條</span></a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="images/iot_icon/area.svg" alt="">
+                            <span>widget-Chart為主軸</span>
+                        </a>
+                        <!-- level2 -->
+                        <ul>
+                            <li><a href="#"><span>單一Chart</span></a></li>
+                            <li><a href="#"><span>雙Chart</span></a></li>
+                            <li><a href="#"><span>Chart + List</span></a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="images/iot_icon/line.svg" alt="">
+                            <span>widget-重覆小單元</span>
+                        </a>
+                        <!-- level2 -->
+                        <ul>
+                            <li><a href="#"><span>識別名稱+Chart</span></a></li>
+                            <li><a href="#"><span>識別名稱+燈號</span></a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="images/iot_icon/bar.svg" alt="">
+                            <span>widget-多操作情境</span>
+                        </a>
+                        <!-- level2 -->
+                        <ul>
+                            <li><a href="#"><span>多Tab切換</span></a></li>
+                            <li><a href="#"><span>時間軸</span></a></li>
+                            <li><a href="#"><span>表格清單</span></a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="images/iot_icon/widget.svg" alt="">
+                            <span>widget-Chart配色</span>
+                        </a>
+                        <!-- level2 -->
+                        <ul>
+                            <li><a href="dark_bar.htm"><span>長條圖</span></a></li>
+                            <li><a href="dark_line.htm"><span>折線圖</span></a></li>
+                            <li><a href="dark_bar_line.htm"><span>長條結合折線圖</span></a></li>
+                            <li><a href="dark_radar.htm"><span>雷達圖</span></a></li>
+                            <li><a href="dark_plot.htm"><span>散點圖</span></a></li>
+                            <li><a href="dark_boxplot.htm"><span>Boxplot</span></a></li>
+                            <li><a href="dark_pie.htm"><span>圓餅圖</span></a></li>
+                        </ul>
+                    </li>
+                    <div class="divider">模組</div>
+                    <li>
+                        <a href="dark_conponent.htm">
+                            <img src="images/iot_icon/folder.svg" alt="">
+                            <span>Components</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="dark_gridsystem.htm">
+                            <img src="images/iot_icon/template.svg" alt="">
+                            <span>格線系統</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="dark_setting.htm">
+                            <img src="images/iot_icon/setting.svg" alt="">
+                            <span>圖表設定</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </aside>
+        <!-- 主要內容數據區 -->
+        <div class="content">
+            <!-- breadcrumb路徑 -->
+            <div class="breadcrumb">
+                <ul>
+                    <li><a href="light.htm">首頁</a></li>
+                    <li><a href="#">節點</a></li>
+                    <li>節點</li>
+                </ul>
+            </div>
+            <!-- gird section -->
+            <div class="grid">
+                <div class="container">
+                    <div class="title">
+                        <h2>圖表高度設定</h2>
+                    </div>
+                    <div class="demo_info">
+                        <p>圖表設定可用adclass方式，設定高度，範例如下：</p>
+                        <pre><code class="language-html">&lt;!-- 圖表400px高度 --&gt;
+&lt;figure class="highcharts-figure"&gt;
+    &lt;div id="axes_line_column2" class="h_400"&gt;&lt;/div&gt;
+&lt;/figure&gt;</code></pre>
+                    </div>
+                    <div class="demo_info">
+                        <pre><code class="language-html">&lt;!-- 【預設】圖表300px高度，不用設定classname --&gt;
+&lt;figure class="highcharts-figure"&gt;
+    &lt;div id="axes_line_column2"&gt;&lt;/div&gt;
+&lt;/figure&gt;</code></pre>
+                    </div>
+                    <div class="demo_info">
+                        <pre><code class="language-html">&lt;!-- 圖表200px高度 --&gt;
+&lt;figure class="highcharts-figure"&gt;
+    &lt;div id="axes_line_column2" class="h_200"&gt;&lt;/div&gt;
+&lt;/figure&gt;</code></pre>
+                    </div>
+                </div>
+                <!-- flex-4-4-4 -->
+                <div class="flex-4-4-4">
+                    <div class="col">
+                        <div class="chart_block">
+                            <div class="chart_head">
+                                <!-- 圖表標題 -->
+                                <h3>圖表高度400px</h3>
+                                <!-- 圖表更新日期 -->
+                                <div class="chart_info">
+                                    <div class="update">
+                                        <span>update:<time>2020/01/01 08:30:20</time></span>
+                                    </div>
+                                    <div class="question">
+                                        <a href="#"><img src="images/iot_icon/question.svg" alt=""></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="chart_content demo_line">
+                                <div class="chart_content">
+                                    <!-- 折線圖 -->
+                                    <figure class="highcharts-figure">
+                                        <div id="axes_line_column2" class="h_400"></div>
+                                    </figure>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="chart_block">
+                            <div class="chart_head">
+                                <!-- 圖表標題 -->
+                                <h3>【預設】圖表高度300px</h3>
+                                <!-- 圖表更新日期 -->
+                                <div class="chart_info">
+                                    <div class="update">
+                                        <span>update:<time>2020/01/01 08:30:20</time></span>
+                                    </div>
+                                    <div class="question">
+                                        <a href="#"><img src="images/iot_icon/question.svg" alt=""></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="chart_content demo_line">
+                                <!-- 散點圖 -->
+                                <figure class="highcharts-figure">
+                                    <div id="axes_line_column1"></div>
+                                </figure>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="chart_block">
+                            <div class="chart_head">
+                                <!-- 圖表標題 -->
+                                <h3>圖表高度200px</h3>
+                                <!-- 圖表更新日期 -->
+                                <div class="chart_info">
+                                    <div class="update">
+                                        <span>update:<time>2020/01/01 08:30:20</time></span>
+                                    </div>
+                                    <div class="question">
+                                        <a href="#"><img src="images/iot_icon/question.svg" alt=""></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="chart_content demo_line">
+                                <!-- 雷達圖 -->
+                                <figure class="highcharts-figure">
+                                    <div id="axes_line_column3" class="h_200"></div>
+                                </figure>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- JS-->
+            <script src="js/jquery-3.3.1.min.js"></script>
+            <script src="vendor/jquery.easing.min.js"></script>
+            <!-- highchart plugin -->
+            <script src="https://code.highcharts.com/highcharts.js"></script>
+            <script src="https://code.highcharts.com/highcharts-more.js"></script>
+            <script src="https://code.highcharts.com/modules/solid-gauge.js"></script>
+            <script src="https://code.highcharts.com/modules/exporting.js"></script>
+            <script src="https://code.highcharts.com/modules/export-data.js"></script>
+            <script src="https://code.highcharts.com/modules/accessibility.js"></script>
+            <script src="https://code.highcharts.com/modules/pattern-fill.js"></script>
+            <!-- hightchart setting -->
+            <script src="js/chart_setting.js"></script>
+            <script>
+            //圖表變數
+            var _Color = ['#20A4F3', '#54CEC3', '#ffbc08', '#fe7b62', '#00b44b', '#2869b9', '#d84400', '#009e7a', '#2e3c56', '#754a28'];
+            // 長條結合折線圖
+            Highcharts.chart('axes_line_column1', {
+                chart: {
+                    zoomType: 'xy'
+                },
+                title: {
+                    text: '標題'
+                },
+                subtitle: {
+                    text: '副標題'
+                },
+                colors: _Color,
+                xAxis: [{
+                    categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
+                    crosshair: true
+                }],
+                yAxis: [{ // Primary yAxis
+                    labels: {
+                        format: '{value}°C',
+                        style: {
+                            color: Highcharts.getOptions().colors[1]
+                        }
+                    },
+                    title: {
+                        text: 'Temperature',
+                        style: {
+                            color: Highcharts.getOptions().colors[1]
+                        }
+                    }
+                }, { // Secondary yAxis
+                    title: {
+                        text: 'Rainfall',
+                        style: {
+                            color: Highcharts.getOptions().colors[0]
+                        }
+                    },
+                    labels: {
+                        format: '{value} mm',
+                        style: {
+                            color: Highcharts.getOptions().colors[0]
+                        }
+                    },
+                    opposite: true
+                }],
+                tooltip: {
+                    shared: true
+                },
+                legend: {
+                    layout: 'vertical',
+                    align: 'left',
+                    x: 120,
+                    verticalAlign: 'top',
+                    y: 100,
+                    floating: true,
+                    backgroundColor: Highcharts.defaultOptions.legend.backgroundColor || // theme
+                        'rgba(255,255,255,0.25)'
+                },
+                series: [{
+                    name: 'Rainfall',
+                    type: 'column',
+                    yAxis: 1,
+                    data: [49.9, 71.5, 106.4, 129.2, 144.0, 176.0, 135.6, 148.5, 216.4, 194.1, 95.6, 54.4],
+                    tooltip: {
+                        valueSuffix: ' mm'
+                    }
+                }, {
+                    name: 'Temperature',
+                    type: 'spline',
+                    data: [7.0, 6.9, 9.5, 14.5, 18.2, 21.5, 25.2, 26.5, 23.3, 18.3, 13.9, 9.6],
+                    tooltip: {
+                        valueSuffix: '°C'
+                    }
+                }]
+            });
+            Highcharts.chart('axes_line_column2', {
+                chart: {
+                    zoomType: 'xy'
+                },
+                title: {
+                    text: '標題'
+                },
+                subtitle: {
+                    text: '副標題'
+                },
+                colors: _Color,
+                xAxis: [{
+                    categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
+                    crosshair: true
+                }],
+                yAxis: [{ // Primary yAxis
+                    labels: {
+                        format: '{value}°C',
+                        style: {
+                            color: Highcharts.getOptions().colors[1]
+                        }
+                    },
+                    title: {
+                        text: 'Temperature',
+                        style: {
+                            color: Highcharts.getOptions().colors[1]
+                        }
+                    }
+                }, { // Secondary yAxis
+                    title: {
+                        text: 'Rainfall',
+                        style: {
+                            color: Highcharts.getOptions().colors[0]
+                        }
+                    },
+                    labels: {
+                        format: '{value} mm',
+                        style: {
+                            color: Highcharts.getOptions().colors[0]
+                        }
+                    },
+                    opposite: true
+                }],
+                tooltip: {
+                    shared: true
+                },
+                legend: {
+                    layout: 'vertical',
+                    align: 'left',
+                    x: 120,
+                    verticalAlign: 'top',
+                    y: 100,
+                    floating: true,
+                    backgroundColor: Highcharts.defaultOptions.legend.backgroundColor || // theme
+                        'rgba(255,255,255,0.25)'
+                },
+                series: [{
+                    name: 'Rainfall',
+                    type: 'column',
+                    yAxis: 1,
+                    data: [49.9, 71.5, 106.4, 129.2, 144.0, 176.0, 135.6, 148.5, 216.4, 194.1, 95.6, 54.4],
+                    tooltip: {
+                        valueSuffix: ' mm'
+                    }
+                }, {
+                    name: 'Temperature',
+                    type: 'spline',
+                    data: [7.0, 6.9, 9.5, 14.5, 18.2, 21.5, 25.2, 26.5, 23.3, 18.3, 13.9, 9.6],
+                    tooltip: {
+                        valueSuffix: '°C'
+                    }
+                }]
+            });
+            Highcharts.chart('axes_line_column3', {
+                chart: {
+                    zoomType: 'xy'
+                },
+                title: {
+                    text: '標題'
+                },
+                subtitle: {
+                    text: '副標題'
+                },
+                colors: _Color,
+                xAxis: [{
+                    categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
+                    crosshair: true
+                }],
+                yAxis: [{ // Primary yAxis
+                    labels: {
+                        format: '{value}°C',
+                        style: {
+                            color: Highcharts.getOptions().colors[1]
+                        }
+                    },
+                    title: {
+                        text: 'Temperature',
+                        style: {
+                            color: Highcharts.getOptions().colors[1]
+                        }
+                    }
+                }, { // Secondary yAxis
+                    title: {
+                        text: 'Rainfall',
+                        style: {
+                            color: Highcharts.getOptions().colors[0]
+                        }
+                    },
+                    labels: {
+                        format: '{value} mm',
+                        style: {
+                            color: Highcharts.getOptions().colors[0]
+                        }
+                    },
+                    opposite: true
+                }],
+                tooltip: {
+                    shared: true
+                },
+                legend: {
+                    layout: 'vertical',
+                    align: 'left',
+                    x: 120,
+                    verticalAlign: 'top',
+                    y: 100,
+                    floating: true,
+                    backgroundColor: Highcharts.defaultOptions.legend.backgroundColor || // theme
+                        'rgba(255,255,255,0.25)'
+                },
+                series: [{
+                    name: 'Rainfall',
+                    type: 'column',
+                    yAxis: 1,
+                    data: [49.9, 71.5, 106.4, 129.2, 144.0, 176.0, 135.6, 148.5, 216.4, 194.1, 95.6, 54.4],
+                    tooltip: {
+                        valueSuffix: ' mm'
+                    }
+                }, {
+                    name: 'Temperature',
+                    type: 'spline',
+                    data: [7.0, 6.9, 9.5, 14.5, 18.2, 21.5, 25.2, 26.5, 23.3, 18.3, 13.9, 9.6],
+                    tooltip: {
+                        valueSuffix: '°C'
+                    }
+                }]
+            });
+            </script>
+            <!-- template customize js -->
+            <script src="js/customize.js"></script>
+            <!-- highlight -->
+            <script src="vendor/highlight/highlight.pack.js"></script>
+            <script>
+            hljs.initHighlightingOnLoad();
+            </script>
+</body>
