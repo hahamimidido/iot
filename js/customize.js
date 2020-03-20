@@ -1,5 +1,11 @@
 // 自行加入的JS請寫在這裡
 $(function() {
+    // var _windowW = $(window).width();
+    // $(window).on("load resize", function(e) {
+    //     if (_windowW < 992) {
+    //         $('aside').removeClass('hidden');
+    //     }
+    // });
     // 選單控制
     $('body').append('<div class="overlay"></div>');
     $('aside').prepend('<a href="#" class="close_btn"></a>');
