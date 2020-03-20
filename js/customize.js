@@ -24,13 +24,15 @@ $(function() {
         $('.overlay').removeClass('show');
         $('.wrapper').removeClass('noscroll');
         $(this).blur();
-        e.preventDefault();
+
     }
     $('.overlay').off().click(function(e) {
         _CLOSEMENU();
+        e.preventDefault();
     });
     $('aside').find('.close_btn').off().click(function(e) {
         _CLOSEMENU();
+        e.preventDefault();
     });
     // 選單控制下拉
     $('aside nav ul li').each(function(index, el) {
