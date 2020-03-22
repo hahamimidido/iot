@@ -17,12 +17,12 @@
 </head>
 <!-- 切換亮色與暗色，亮色不用加註，暗色 class="dark" -->
 
-<body class="dark">
+<body>
     <div class="wrapper">
         <!-- load header.htm -->
         <div class="header"></div>
         <!-- load aside.htm -->
-        <div class="aside_dark"></div>
+        <div class="aside"></div>
         <!-- 主要內容數據區 -->
         <div class="content">
             <!-- breadcrumb路徑 -->
@@ -37,7 +37,7 @@
             <div class="grid">
                 <div class="container">
                     <div class="title">
-                        <h2>多指數範例</h2>
+                        <h2>單一Chart範例</h2>
                     </div>
                     <!-- flex-8-4 -->
                     <div class="flex-8-4">
@@ -45,7 +45,7 @@
                             <div class="chart_block">
                                 <div class="chart_head">
                                     <!-- 圖表標題 -->
-                                    <h3>多指數</h3>
+                                    <h3>單一Chart+標籤置右</h3>
                                     <!-- 圖表更新日期 -->
                                     <div class="chart_info">
                                         <div class="update">
@@ -58,41 +58,18 @@
                                 </div>
                                 <div class="chart_content">
                                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
-                                    <!-- 多指數 -->
-                                    <div class="index_block">
-                                        <div class="item">
-                                            <span class="item_title">設備</span>
-                                            <span class="item_value">D09</span>
-                                        </div>
-                                        <div class="item">
-                                            <span class="item_title">產能效率</span>
-                                            <span class="item_value">78%</span>
-                                        </div>
-                                        <div class="item">
-                                            <span class="item_title">OEE</span>
-                                            <span class="item_value">81%</span>
-                                        </div>
-                                        <div class="item">
-                                            <span class="item_title">當前加工刀具</span>
-                                            <span class="item_value">T02</span>
-                                        </div>
-                                        <div class="item">
-                                            <span class="item_title">健康值</span>
-                                            <span class="item_value">65</span>
-                                        </div>
-                                        <div class="item">
-                                            <span class="item_title">剩餘壽命</span>
-                                            <span class="item_value">53</span>
-                                        </div>
-                                        <div class="item">
-                                            <span class="item_title">設備</span>
-                                            <span class="item_value">D09</span>
-                                        </div>
-                                        <div class="item">
-                                            <span class="item_title">設備</span>
-                                            <span class="item_value">D09</span>
-                                        </div>
+                                    <div class="tag text-right">
+                                        <ul>
+                                            <li class="active"><a href="#">標籤1</a></li>
+                                            <li><a href="#">標籤2</a></li>
+                                            <li><a href="#">標籤3</a></li>
+                                            <li><a href="#">標籤4</a></li>
+                                        </ul>
                                     </div>
+                                    <!-- 單一Chart -->
+                                    <figure class="highcharts-figure">
+                                        <div id="basic_column1"></div>
+                                    </figure>
                                 </div>
                             </div>
                         </div>
@@ -100,7 +77,7 @@
                             <div class="chart_block">
                                 <div class="chart_head">
                                     <!-- 圖表標題 -->
-                                    <h3>多指數</h3>
+                                    <h3>單一Chart+標籤置中</h3>
                                     <!-- 圖表更新日期 -->
                                     <div class="chart_info">
                                         <div class="update">
@@ -113,33 +90,18 @@
                                 </div>
                                 <div class="chart_content">
                                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
-                                    <!-- 多指數 -->
-                                    <div class="index_block">
-                                        <div class="item">
-                                            <span class="item_title">設備</span>
-                                            <span class="item_value">D09</span>
-                                        </div>
-                                        <div class="item">
-                                            <span class="item_title">產能效率</span>
-                                            <span class="item_value">78%</span>
-                                        </div>
-                                        <div class="item">
-                                            <span class="item_title">OEE</span>
-                                            <span class="item_value">81%</span>
-                                        </div>
-                                        <div class="item">
-                                            <span class="item_title">當前加工刀具</span>
-                                            <span class="item_value">T02</span>
-                                        </div>
-                                        <div class="item">
-                                            <span class="item_title">健康值</span>
-                                            <span class="item_value">65</span>
-                                        </div>
-                                        <div class="item">
-                                            <span class="item_title">剩餘壽命</span>
-                                            <span class="item_value">53</span>
-                                        </div>
+                                    <div class="tag text-center">
+                                        <ul>
+                                            <li class="active"><a href="#">標籤1</a></li>
+                                            <li><a href="#">標籤2</a></li>
+                                            <li><a href="#">標籤3</a></li>
+                                            <li><a href="#">標籤4</a></li>
+                                        </ul>
                                     </div>
+                                    <!-- 單一Chart -->
+                                    <figure class="highcharts-figure">
+                                        <div id="basic_column2"></div>
+                                    </figure>
                                 </div>
                             </div>
                         </div>
@@ -150,7 +112,7 @@
                             <div class="chart_block">
                                 <div class="chart_head">
                                     <!-- 圖表標題 -->
-                                    <h3>多指數</h3>
+                                    <h3>單一Chart</h3>
                                     <!-- 圖表更新日期 -->
                                     <div class="chart_info">
                                         <div class="update">
@@ -162,41 +124,18 @@
                                     </div>
                                 </div>
                                 <div class="chart_content">
-                                    <!-- 多指數 -->
-                                    <div class="index_block">
-                                        <div class="item">
-                                            <span class="item_title">設備</span>
-                                            <span class="item_value">D09</span>
-                                        </div>
-                                        <div class="item">
-                                            <span class="item_title">設備</span>
-                                            <span class="item_value">D09</span>
-                                        </div>
-                                        <div class="item">
-                                            <span class="item_title">設備</span>
-                                            <span class="item_value">D09</span>
-                                        </div>
-                                        <div class="item">
-                                            <span class="item_title">設備</span>
-                                            <span class="item_value">D09</span>
-                                        </div>
-                                        <div class="item">
-                                            <span class="item_title">設備</span>
-                                            <span class="item_value">D09</span>
-                                        </div>
-                                        <div class="item">
-                                            <span class="item_title">設備</span>
-                                            <span class="item_value">D09</span>
-                                        </div>
-                                        <div class="item">
-                                            <span class="item_title">設備</span>
-                                            <span class="item_value">D09</span>
-                                        </div>
-                                        <div class="item">
-                                            <span class="item_title">設備</span>
-                                            <span class="item_value">D09</span>
-                                        </div>
+                                    <div class="tag">
+                                        <ul>
+                                            <li class="active"><a href="#">標籤1</a></li>
+                                            <li><a href="#">標籤2</a></li>
+                                            <li><a href="#">標籤3</a></li>
+                                            <li><a href="#">標籤4</a></li>
+                                        </ul>
                                     </div>
+                                    <!-- 單一Chart -->
+                                    <figure class="highcharts-figure">
+                                        <div id="basic_column3"></div>
+                                    </figure>
                                 </div>
                             </div>
                         </div>
@@ -204,7 +143,7 @@
                             <div class="chart_block">
                                 <div class="chart_head">
                                     <!-- 圖表標題 -->
-                                    <h3>多指數</h3>
+                                    <h3>單一Chart</h3>
                                     <!-- 圖表更新日期 -->
                                     <div class="chart_info">
                                         <div class="update">
@@ -216,41 +155,18 @@
                                     </div>
                                 </div>
                                 <div class="chart_content">
-                                        <!-- 多指數 -->
-                                        <div class="index_block">
-                                            <div class="item">
-                                                <span class="item_title">設備</span>
-                                                <span class="item_value">D09</span>
-                                            </div>
-                                            <div class="item">
-                                                <span class="item_title">產能效率</span>
-                                                <span class="item_value">78%</span>
-                                            </div>
-                                            <div class="item">
-                                                <span class="item_title">OEE</span>
-                                                <span class="item_value">81%</span>
-                                            </div>
-                                            <div class="item">
-                                                <span class="item_title">當前加工刀具</span>
-                                                <span class="item_value">T02</span>
-                                            </div>
-                                            <div class="item">
-                                                <span class="item_title">健康值</span>
-                                                <span class="item_value">65</span>
-                                            </div>
-                                            <div class="item">
-                                                <span class="item_title">剩餘壽命</span>
-                                                <span class="item_value">53</span>
-                                            </div>
-                                            <div class="item">
-                                                <span class="item_title">設備</span>
-                                                <span class="item_value">D09</span>
-                                            </div>
-                                            <div class="item">
-                                                <span class="item_title">設備</span>
-                                                <span class="item_value">D09</span>
-                                            </div>
-                                        </div>
+                                    <div class="tag">
+                                        <ul>
+                                            <li class="active"><a href="#">標籤1</a></li>
+                                            <li><a href="#">標籤2</a></li>
+                                            <li><a href="#">標籤3</a></li>
+                                            <li><a href="#">標籤4</a></li>
+                                        </ul>
+                                    </div>
+                                    <!-- 單一Chart -->
+                                    <figure class="highcharts-figure">
+                                        <div id="basic_column4"></div>
+                                    </figure>
                                 </div>
                             </div>
                         </div>
@@ -258,7 +174,7 @@
                             <div class="chart_block">
                                 <div class="chart_head">
                                     <!-- 圖表標題 -->
-                                    <h3>多指數</h3>
+                                    <h3>單一Chart</h3>
                                     <!-- 圖表更新日期 -->
                                     <div class="chart_info">
                                         <div class="update">
@@ -270,41 +186,18 @@
                                     </div>
                                 </div>
                                 <div class="chart_content">
-                                    <!-- 多指數 -->
-                                    <div class="index_block">
-                                        <div class="item">
-                                            <span class="item_title">設備</span>
-                                            <span class="item_value">D09</span>
-                                        </div>
-                                        <div class="item">
-                                            <span class="item_title">產能效率</span>
-                                            <span class="item_value">78%</span>
-                                        </div>
-                                        <div class="item">
-                                            <span class="item_title">OEE</span>
-                                            <span class="item_value">81%</span>
-                                        </div>
-                                        <div class="item">
-                                            <span class="item_title">當前加工刀具</span>
-                                            <span class="item_value">T02</span>
-                                        </div>
-                                        <div class="item">
-                                            <span class="item_title">健康值</span>
-                                            <span class="item_value">65</span>
-                                        </div>
-                                        <div class="item">
-                                            <span class="item_title">剩餘壽命</span>
-                                            <span class="item_value">53</span>
-                                        </div>
-                                        <div class="item">
-                                            <span class="item_title">設備</span>
-                                            <span class="item_value">D09</span>
-                                        </div>
-                                        <div class="item">
-                                            <span class="item_title">設備</span>
-                                            <span class="item_value">D09</span>
-                                        </div>
+                                    <div class="tag">
+                                        <ul>
+                                            <li class="active"><a href="#">標籤1</a></li>
+                                            <li><a href="#">標籤2</a></li>
+                                            <li><a href="#">標籤3</a></li>
+                                            <li><a href="#">標籤4</a></li>
+                                        </ul>
                                     </div>
+                                    <!-- 單一Chart -->
+                                    <figure class="highcharts-figure">
+                                        <div id="basic_column5"></div>
+                                    </figure>
                                 </div>
                             </div>
                         </div>
@@ -315,7 +208,7 @@
                             <div class="chart_block">
                                 <div class="chart_head">
                                     <!-- 圖表標題 -->
-                                    <h3>多指數</h3>
+                                    <h3>單一Chart</h3>
                                     <!-- 圖表更新日期 -->
                                     <div class="chart_info">
                                         <div class="update">
@@ -327,41 +220,18 @@
                                     </div>
                                 </div>
                                 <div class="chart_content">
-                                        <!-- 多指數 -->
-                                        <div class="index_block">
-                                            <div class="item">
-                                                <span class="item_title">設備</span>
-                                                <span class="item_value">D09</span>
-                                            </div>
-                                            <div class="item">
-                                                <span class="item_title">產能效率</span>
-                                                <span class="item_value">78%</span>
-                                            </div>
-                                            <div class="item">
-                                                <span class="item_title">OEE</span>
-                                                <span class="item_value">81%</span>
-                                            </div>
-                                            <div class="item">
-                                                <span class="item_title">當前加工刀具</span>
-                                                <span class="item_value">T02</span>
-                                            </div>
-                                            <div class="item">
-                                                <span class="item_title">健康值</span>
-                                                <span class="item_value">65</span>
-                                            </div>
-                                            <div class="item">
-                                                <span class="item_title">剩餘壽命</span>
-                                                <span class="item_value">53</span>
-                                            </div>
-                                            <div class="item">
-                                                <span class="item_title">設備</span>
-                                                <span class="item_value">D09</span>
-                                            </div>
-                                            <div class="item">
-                                                <span class="item_title">設備</span>
-                                                <span class="item_value">D09</span>
-                                            </div>
-                                        </div>
+                                    <div class="tag">
+                                        <ul>
+                                            <li class="active"><a href="#">標籤1</a></li>
+                                            <li><a href="#">標籤2</a></li>
+                                            <li><a href="#">標籤3</a></li>
+                                            <li><a href="#">標籤4</a></li>
+                                        </ul>
+                                    </div>
+                                    <!-- 單一Chart -->
+                                    <figure class="highcharts-figure">
+                                        <div id="basic_column6"></div>
+                                    </figure>
                                 </div>
                             </div>
                         </div>
@@ -369,7 +239,7 @@
                             <div class="chart_block">
                                 <div class="chart_head">
                                     <!-- 圖表標題 -->
-                                    <h3>多指數</h3>
+                                    <h3>單一Chart</h3>
                                     <!-- 圖表更新日期 -->
                                     <div class="chart_info">
                                         <div class="update">
@@ -381,41 +251,18 @@
                                     </div>
                                 </div>
                                 <div class="chart_content">
-                                        <!-- 多指數 -->
-                                        <div class="index_block">
-                                            <div class="item">
-                                                <span class="item_title">設備</span>
-                                                <span class="item_value">D09</span>
-                                            </div>
-                                            <div class="item">
-                                                <span class="item_title">產能效率</span>
-                                                <span class="item_value">78%</span>
-                                            </div>
-                                            <div class="item">
-                                                <span class="item_title">OEE</span>
-                                                <span class="item_value">81%</span>
-                                            </div>
-                                            <div class="item">
-                                                <span class="item_title">當前加工刀具</span>
-                                                <span class="item_value">T02</span>
-                                            </div>
-                                            <div class="item">
-                                                <span class="item_title">健康值</span>
-                                                <span class="item_value">65</span>
-                                            </div>
-                                            <div class="item">
-                                                <span class="item_title">剩餘壽命</span>
-                                                <span class="item_value">53</span>
-                                            </div>
-                                            <div class="item">
-                                                <span class="item_title">設備</span>
-                                                <span class="item_value">D09</span>
-                                            </div>
-                                            <div class="item">
-                                                <span class="item_title">設備</span>
-                                                <span class="item_value">D09</span>
-                                            </div>
-                                        </div>
+                                    <div class="tag">
+                                        <ul>
+                                            <li class="active"><a href="#">標籤1</a></li>
+                                            <li><a href="#">標籤2</a></li>
+                                            <li><a href="#">標籤3</a></li>
+                                            <li><a href="#">標籤4</a></li>
+                                        </ul>
+                                    </div>
+                                    <!-- 單一Chart -->
+                                    <figure class="highcharts-figure">
+                                        <div id="basic_column7"></div>
+                                    </figure>
                                 </div>
                             </div>
                         </div>
@@ -426,7 +273,7 @@
                             <div class="chart_block">
                                 <div class="chart_head">
                                     <!-- 圖表標題 -->
-                                    <h3>多指數</h3>
+                                    <h3>單一Chart</h3>
                                     <!-- 圖表更新日期 -->
                                     <div class="chart_info">
                                         <div class="update">
@@ -438,41 +285,18 @@
                                     </div>
                                 </div>
                                 <div class="chart_content">
-                                        <!-- 多指數 -->
-                                        <div class="index_block">
-                                            <div class="item">
-                                                <span class="item_title">設備</span>
-                                                <span class="item_value">D09</span>
-                                            </div>
-                                            <div class="item">
-                                                <span class="item_title">產能效率</span>
-                                                <span class="item_value">78%</span>
-                                            </div>
-                                            <div class="item">
-                                                <span class="item_title">OEE</span>
-                                                <span class="item_value">81%</span>
-                                            </div>
-                                            <div class="item">
-                                                <span class="item_title">當前加工刀具</span>
-                                                <span class="item_value">T02</span>
-                                            </div>
-                                            <div class="item">
-                                                <span class="item_title">健康值</span>
-                                                <span class="item_value">65</span>
-                                            </div>
-                                            <div class="item">
-                                                <span class="item_title">剩餘壽命</span>
-                                                <span class="item_value">53</span>
-                                            </div>
-                                            <div class="item">
-                                                <span class="item_title">設備</span>
-                                                <span class="item_value">D09</span>
-                                            </div>
-                                            <div class="item">
-                                                <span class="item_title">設備</span>
-                                                <span class="item_value">D09</span>
-                                            </div>
-                                        </div>
+                                    <div class="tag">
+                                        <ul>
+                                            <li class="active"><a href="#">標籤1</a></li>
+                                            <li><a href="#">標籤2</a></li>
+                                            <li><a href="#">標籤3</a></li>
+                                            <li><a href="#">標籤4</a></li>
+                                        </ul>
+                                    </div>
+                                    <!-- 單一Chart -->
+                                    <figure class="highcharts-figure">
+                                        <div id="basic_column8"></div>
+                                    </figure>
                                 </div>
                             </div>
                         </div>
@@ -483,7 +307,7 @@
                             <div class="chart_block">
                                 <div class="chart_head">
                                     <!-- 圖表標題 -->
-                                    <h3>多指數</h3>
+                                    <h3>單一Chart</h3>
                                     <!-- 圖表更新日期 -->
                                     <div class="chart_info">
                                         <div class="update">
@@ -495,41 +319,18 @@
                                     </div>
                                 </div>
                                 <div class="chart_content">
-                                        <!-- 多指數 -->
-                                        <div class="index_block">
-                                            <div class="item">
-                                                <span class="item_title">設備</span>
-                                                <span class="item_value">D09</span>
-                                            </div>
-                                            <div class="item">
-                                                <span class="item_title">產能效率</span>
-                                                <span class="item_value">78%</span>
-                                            </div>
-                                            <div class="item">
-                                                <span class="item_title">OEE</span>
-                                                <span class="item_value">81%</span>
-                                            </div>
-                                            <div class="item">
-                                                <span class="item_title">當前加工刀具</span>
-                                                <span class="item_value">T02</span>
-                                            </div>
-                                            <div class="item">
-                                                <span class="item_title">健康值</span>
-                                                <span class="item_value">65</span>
-                                            </div>
-                                            <div class="item">
-                                                <span class="item_title">剩餘壽命</span>
-                                                <span class="item_value">53</span>
-                                            </div>
-                                            <div class="item">
-                                                <span class="item_title">設備</span>
-                                                <span class="item_value">D09</span>
-                                            </div>
-                                            <div class="item">
-                                                <span class="item_title">設備</span>
-                                                <span class="item_value">D09</span>
-                                            </div>
-                                        </div>
+                                    <div class="tag">
+                                        <ul>
+                                            <li class="active"><a href="#">標籤1</a></li>
+                                            <li><a href="#">標籤2</a></li>
+                                            <li><a href="#">標籤3</a></li>
+                                            <li><a href="#">標籤4</a></li>
+                                        </ul>
+                                    </div>
+                                    <!-- 單一Chart -->
+                                    <figure class="highcharts-figure">
+                                        <div id="basic_column9"></div>
+                                    </figure>
                                 </div>
                             </div>
                         </div>
@@ -537,7 +338,7 @@
                             <div class="chart_block">
                                 <div class="chart_head">
                                     <!-- 圖表標題 -->
-                                    <h3>多指數</h3>
+                                    <h3>單一Chart</h3>
                                     <!-- 圖表更新日期 -->
                                     <div class="chart_info">
                                         <div class="update">
@@ -549,41 +350,18 @@
                                     </div>
                                 </div>
                                 <div class="chart_content">
-                                        <!-- 多指數 -->
-                                        <div class="index_block">
-                                            <div class="item">
-                                                <span class="item_title">設備</span>
-                                                <span class="item_value">D09</span>
-                                            </div>
-                                            <div class="item">
-                                                <span class="item_title">產能效率</span>
-                                                <span class="item_value">78%</span>
-                                            </div>
-                                            <div class="item">
-                                                <span class="item_title">OEE</span>
-                                                <span class="item_value">81%</span>
-                                            </div>
-                                            <div class="item">
-                                                <span class="item_title">當前加工刀具</span>
-                                                <span class="item_value">T02</span>
-                                            </div>
-                                            <div class="item">
-                                                <span class="item_title">健康值</span>
-                                                <span class="item_value">65</span>
-                                            </div>
-                                            <div class="item">
-                                                <span class="item_title">剩餘壽命</span>
-                                                <span class="item_value">53</span>
-                                            </div>
-                                            <div class="item">
-                                                <span class="item_title">設備</span>
-                                                <span class="item_value">D09</span>
-                                            </div>
-                                            <div class="item">
-                                                <span class="item_title">設備</span>
-                                                <span class="item_value">D09</span>
-                                            </div>
-                                        </div>
+                                    <div class="tag">
+                                        <ul>
+                                            <li class="active"><a href="#">標籤1</a></li>
+                                            <li><a href="#">標籤2</a></li>
+                                            <li><a href="#">標籤3</a></li>
+                                            <li><a href="#">標籤4</a></li>
+                                        </ul>
+                                    </div>
+                                    <!-- 單一Chart -->
+                                    <figure class="highcharts-figure">
+                                        <div id="basic_column10"></div>
+                                    </figure>
                                 </div>
                             </div>
                         </div>
@@ -591,7 +369,7 @@
                             <div class="chart_block">
                                 <div class="chart_head">
                                     <!-- 圖表標題 -->
-                                    <h3>多指數</h3>
+                                    <h3>單一Chart</h3>
                                     <!-- 圖表更新日期 -->
                                     <div class="chart_info">
                                         <div class="update">
@@ -603,41 +381,18 @@
                                     </div>
                                 </div>
                                 <div class="chart_content">
-                                        <!-- 多指數 -->
-                                        <div class="index_block">
-                                            <div class="item">
-                                                <span class="item_title">設備</span>
-                                                <span class="item_value">D09</span>
-                                            </div>
-                                            <div class="item">
-                                                <span class="item_title">產能效率</span>
-                                                <span class="item_value">78%</span>
-                                            </div>
-                                            <div class="item">
-                                                <span class="item_title">OEE</span>
-                                                <span class="item_value">81%</span>
-                                            </div>
-                                            <div class="item">
-                                                <span class="item_title">當前加工刀具</span>
-                                                <span class="item_value">T02</span>
-                                            </div>
-                                            <div class="item">
-                                                <span class="item_title">健康值</span>
-                                                <span class="item_value">65</span>
-                                            </div>
-                                            <div class="item">
-                                                <span class="item_title">剩餘壽命</span>
-                                                <span class="item_value">53</span>
-                                            </div>
-                                            <div class="item">
-                                                <span class="item_title">設備</span>
-                                                <span class="item_value">D09</span>
-                                            </div>
-                                            <div class="item">
-                                                <span class="item_title">設備</span>
-                                                <span class="item_value">D09</span>
-                                            </div>
-                                        </div>
+                                    <div class="tag">
+                                        <ul>
+                                            <li class="active"><a href="#">標籤1</a></li>
+                                            <li><a href="#">標籤2</a></li>
+                                            <li><a href="#">標籤3</a></li>
+                                            <li><a href="#">標籤4</a></li>
+                                        </ul>
+                                    </div>
+                                    <!-- 單一Chart -->
+                                    <figure class="highcharts-figure">
+                                        <div id="basic_column11"></div>
+                                    </figure>
                                 </div>
                             </div>
                         </div>
@@ -660,7 +415,7 @@
             <script>
             //圖表變數
             var _Color = ['#20A4F3', '#54CEC3', '#ffbc08', '#fe7b62', '#00b44b', '#2869b9', '#d84400', '#009e7a', '#2e3c56', '#754a28'];
-            // 基本多指數
+            // 基本單一Chart
             Highcharts.chart('basic_column1', {
                 chart: {
                     type: 'column'
