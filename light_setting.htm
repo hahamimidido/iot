@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="vendor/highlight/github-gist.css">
 </head>
 <!-- 切換亮色與暗色，亮色不用加註，暗色 class="dark" -->
+
 <body>
     <div class="wrapper">
         <!-- load header.htm -->
@@ -40,6 +41,23 @@
                     <div class="title">
                         <h2>圖表設定</h2>
                     </div>
+                    <h3 class="demo">圖表預設色彩</h3>
+                    <div class="demo_info">
+                       <p>提供10組預設色彩色碼序列，供提供圖表配色，light,dark版共用同一組色碼，請自行帶入到highchart的function。</p>
+                         <pre><code class="javascript">var _Color = ['#20A4F3', '#54CEC3', '#ffbc08', '#fe7b62', '#00b44b', '#2869b9', '#d84400', '#009e7a', '#2e3c56', '#754a28'];</code></pre>
+                        <div class="color">
+                            <span style="background:#20A4F3">#20A4F3</span>
+                            <span style="background:#54CEC3">#54CEC3</span>
+                            <span style="background:#ffbc08">#ffbc08</span>
+                            <span style="background:#fe7b62">#fe7b62</span>
+                            <span style="background:#00b44b">#00b44b</span>
+                            <span style="background:#2869b9">#2869b9</span>
+                            <span style="background:#d84400">#d84400</span>
+                            <span style="background:#009e7a">#009e7a</span>
+                            <span style="background:#2e3c56">#2e3c56</span>
+                            <span style="background:#754a28">#754a28</span>
+                        </div>
+                    </div>
                     <h3 class="demo">圖表高度</h3>
                     <div class="demo_info">
                         <p>圖表設定可用adclass方式，設定高度，範例如下：</p>
@@ -61,7 +79,7 @@
 &lt;/figure&gt;</code></pre>
                     </div>
                 </div>
-                 <!-- flex-4-4-4 -->
+                <!-- flex-4-4-4 -->
                 <div class="flex-4-4-4">
                     <div class="col">
                         <div class="chart_block">
@@ -79,10 +97,10 @@
                                 </div>
                             </div>
                             <div class="chart_content demo_line">
-                                    <!-- 折線圖 -->
-                                    <figure class="highcharts-figure">
-                                        <div id="axes_line_column2" class="h_400"></div>
-                                    </figure>
+                                <!-- 折線圖 -->
+                                <figure class="highcharts-figure">
+                                    <div id="axes_line_column2" class="h_400"></div>
+                                </figure>
                             </div>
                         </div>
                     </div>
