@@ -1,0 +1,1913 @@
+<!doctype html>
+<html lang="zh-Hant">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>AI IOT</title>
+    <!--HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries [if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->
+    <!-- hyUI css -->
+    <link rel="stylesheet" href="css/iot.css">
+    <!-- favicon -->
+    <link href="images/favicon.png" rel="icon" type="image/x-icon">
+</head>
+<!-- 切換亮色與暗色，亮色不用加註，暗色 class="dark" -->
+
+<body class="dark">
+    <div class="wrapper">
+        <!-- load header.htm -->
+        <div class="header"></div>
+        <!-- load aside.htm -->
+        <div class="aside_dark"></div>
+        <!-- 主要內容數據區 -->
+        <div class="content">
+            <!-- breadcrumb路徑 -->
+            <div class="breadcrumb">
+                <ul>
+                    <li><a href="light.htm">首頁</a></li>
+                    <li><a href="#">節點</a></li>
+                    <li>節點</li>
+                </ul>
+            </div>
+            <!-- gird section -->
+            <div class="grid">
+                <div class="container">
+                    <div class="title">
+                        <h2>雙Chart範例</h2>
+                    </div>
+                    <!-- flex-8-4 -->
+                    <div class="flex-8-4">
+                        <div class="col ">
+                            <div class="chart_block">
+                                <div class="chart_head">
+                                    <!-- 圖表標題 -->
+                                    <h3>雙Chart</h3>
+                                    <!-- 圖表更新日期 -->
+                                    <div class="chart_info">
+                                        <div class="update">
+                                            <span>update:<time>2020/01/01 08:30:20</time></span>
+                                        </div>
+                                        <div class="question">
+                                            <a href="#"><img src="images/iot_icon/question.svg" alt=""></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- 雙Chart -->
+                                <div class="chart_content">
+                                    <div class="double_chart">
+                                        <div class="item">
+                                            <h4>圖表一</h4>
+                                            <div class="chart">
+                                            <figure class="highcharts-figure">
+                                                <!-- 因為雙chart 可將高度縮小 設定請看 light_setting.htm -->
+                                                <div id="basic_column1" class="h_200"></div>
+                                            </figure>
+                                            </div>
+                                        </div>
+                                        <div class="item">
+                                            <h4>圖表二</h4>
+                                            <div class="chart">
+                                            <figure class="highcharts-figure">
+                                                <div id="axes_line_column1" class="h_200"></div>
+                                            </figure>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="chart_block">
+                                <div class="chart_head">
+                                    <!-- 圖表標題 -->
+                                    <h3>雙Chart</h3>
+                                    <!-- 圖表更新日期 -->
+                                    <div class="chart_info">
+                                        <div class="update">
+                                            <span>update:<time>2020/01/01 08:30:20</time></span>
+                                        </div>
+                                        <div class="question">
+                                            <a href="#"><img src="images/iot_icon/question.svg" alt=""></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- 雙Chart -->
+                                <div class="chart_content">
+                                    <div class="double_chart">
+                                        <div class="item">
+                                            <h4>圖表一</h4>
+                                            <div class="chart">
+                                            <figure class="highcharts-figure">
+                                                <!-- 因為雙chart 可將高度縮小 設定請看 light_setting.htm -->
+                                                <div id="basic_column2" class="h_200"></div>
+                                            </figure>
+                                            </div>
+                                        </div>
+                                        <div class="item">
+                                            <h4>圖表二</h4>
+                                            <div class="chart">
+                                            <figure class="highcharts-figure">
+                                                <div id="axes_line_column2" class="h_200"></div>
+                                            </figure>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- flex-4-4-4 -->
+                    <div class="flex-4-4-4">
+                        <div class="col">
+                            <div class="chart_block">
+                                <div class="chart_head">
+                                    <!-- 圖表標題 -->
+                                    <h3>雙Chart</h3>
+                                    <!-- 圖表更新日期 -->
+                                    <div class="chart_info">
+                                        <div class="update">
+                                            <span>update:<time>2020/01/01 08:30:20</time></span>
+                                        </div>
+                                        <div class="question">
+                                            <a href="#"><img src="images/iot_icon/question.svg" alt=""></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- 雙Chart -->
+                                <div class="chart_content">
+                                    <div class="double_chart">
+                                        <div class="item">
+                                            <h4>圖表一</h4>
+                                            <div class="chart">
+                                            <figure class="highcharts-figure">
+                                                <!-- 因為雙chart 可將高度縮小 設定請看 light_setting.htm -->
+                                                <div id="basic_column3" class="h_200"></div>
+                                            </figure>
+                                            </div>
+                                        </div>
+                                        <div class="item">
+                                            <h4>圖表二</h4>
+                                            <div class="chart">
+                                            <figure class="highcharts-figure">
+                                                <div id="axes_line_column3" class="h_200"></div>
+                                            </figure>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="chart_block">
+                                <div class="chart_head">
+                                    <!-- 圖表標題 -->
+                                    <h3>雙Chart</h3>
+                                    <!-- 圖表更新日期 -->
+                                    <div class="chart_info">
+                                        <div class="update">
+                                            <span>update:<time>2020/01/01 08:30:20</time></span>
+                                        </div>
+                                        <div class="question">
+                                            <a href="#"><img src="images/iot_icon/question.svg" alt=""></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- 雙Chart -->
+                                <div class="chart_content">
+                                    <div class="double_chart">
+                                        <div class="item">
+                                            <h4>圖表一</h4>
+                                            <div class="chart">
+                                            <figure class="highcharts-figure">
+                                                <!-- 因為雙chart 可將高度縮小 設定請看 light_setting.htm -->
+                                                <div id="basic_column4" class="h_200"></div>
+                                            </figure>
+                                            </div>
+                                        </div>
+                                        <div class="item">
+                                            <h4>圖表二</h4>
+                                            <div class="chart">
+                                            <figure class="highcharts-figure">
+                                                <div id="axes_line_column4" class="h_200"></div>
+                                            </figure>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="chart_block">
+                                <div class="chart_head">
+                                    <!-- 圖表標題 -->
+                                    <h3>雙Chart</h3>
+                                    <!-- 圖表更新日期 -->
+                                    <div class="chart_info">
+                                        <div class="update">
+                                            <span>update:<time>2020/01/01 08:30:20</time></span>
+                                        </div>
+                                        <div class="question">
+                                            <a href="#"><img src="images/iot_icon/question.svg" alt=""></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- 雙Chart -->
+                                <div class="chart_content">
+                                    <div class="double_chart">
+                                        <div class="item">
+                                            <h4>圖表一</h4>
+                                            <div class="chart">
+                                            <figure class="highcharts-figure">
+                                                <!-- 因為雙chart 可將高度縮小 設定請看 light_setting.htm -->
+                                                <div id="basic_column5" class="h_200"></div>
+                                            </figure>
+                                            </div>
+                                        </div>
+                                        <div class="item">
+                                            <h4>圖表二</h4>
+                                            <div class="chart">
+                                            <figure class="highcharts-figure">
+                                                <div id="axes_line_column5" class="h_200"></div>
+                                            </figure>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- flex-6-6 -->
+                    <div class="flex-6-6">
+                        <div class="col">
+                            <div class="chart_block">
+                                <div class="chart_head">
+                                    <!-- 圖表標題 -->
+                                    <h3>雙Chart</h3>
+                                    <!-- 圖表更新日期 -->
+                                    <div class="chart_info">
+                                        <div class="update">
+                                            <span>update:<time>2020/01/01 08:30:20</time></span>
+                                        </div>
+                                        <div class="question">
+                                            <a href="#"><img src="images/iot_icon/question.svg" alt=""></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- 雙Chart -->
+                                <div class="chart_content">
+                                    <div class="double_chart">
+                                        <div class="item">
+                                            <h4>圖表一</h4>
+                                            <div class="chart">
+                                            <figure class="highcharts-figure">
+                                                <!-- 因為雙chart 可將高度縮小 設定請看 light_setting.htm -->
+                                                <div id="basic_column6" class="h_200"></div>
+                                            </figure>
+                                            </div>
+                                        </div>
+                                        <div class="item">
+                                            <h4>圖表二</h4>
+                                            <div class="chart">
+                                            <figure class="highcharts-figure">
+                                                <div id="axes_line_column6" class="h_200"></div>
+                                            </figure>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="chart_block">
+                                <div class="chart_head">
+                                    <!-- 圖表標題 -->
+                                    <h3>雙Chart</h3>
+                                    <!-- 圖表更新日期 -->
+                                    <div class="chart_info">
+                                        <div class="update">
+                                            <span>update:<time>2020/01/01 08:30:20</time></span>
+                                        </div>
+                                        <div class="question">
+                                            <a href="#"><img src="images/iot_icon/question.svg" alt=""></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- 雙Chart -->
+                                <div class="chart_content">
+                                    <div class="double_chart">
+                                        <div class="item">
+                                            <h4>圖表一</h4>
+                                            <div class="chart">
+                                            <figure class="highcharts-figure">
+                                                <!-- 因為雙chart 可將高度縮小 設定請看 light_setting.htm -->
+                                                <div id="basic_column7" class="h_200"></div>
+                                            </figure>
+                                            </div>
+                                        </div>
+                                        <div class="item">
+                                            <h4>圖表二</h4>
+                                            <div class="chart">
+                                            <figure class="highcharts-figure">
+                                                <div id="axes_line_column7" class="h_200"></div>
+                                            </figure>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- flex-12 -->
+                    <div class="flex-12">
+                        <div class="col">
+                            <div class="chart_block">
+                                <div class="chart_head">
+                                    <!-- 圖表標題 -->
+                                    <h3>雙Chart</h3>
+                                    <!-- 圖表更新日期 -->
+                                    <div class="chart_info">
+                                        <div class="update">
+                                            <span>update:<time>2020/01/01 08:30:20</time></span>
+                                        </div>
+                                        <div class="question">
+                                            <a href="#"><img src="images/iot_icon/question.svg" alt=""></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- 雙Chart -->
+                                <div class="chart_content">
+                                    <div class="double_chart">
+                                        <div class="item">
+                                            <h4>圖表一</h4>
+                                            <div class="chart">
+                                            <figure class="highcharts-figure">
+                                                <!-- 因為雙chart 可將高度縮小 設定請看 light_setting.htm -->
+                                                <div id="basic_column8" class="h_200"></div>
+                                            </figure>
+                                            </div>
+                                        </div>
+                                        <div class="item">
+                                            <h4>圖表二</h4>
+                                            <div class="chart">
+                                            <figure class="highcharts-figure">
+                                                <div id="axes_line_column8" class="h_200"></div>
+                                            </figure>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- flex-3-6-3 -->
+                    <div class="flex-3-6-3">
+                        <div class="col">
+                            <div class="chart_block">
+                                <div class="chart_head">
+                                    <!-- 圖表標題 -->
+                                    <h3>雙Chart</h3>
+                                    <!-- 圖表更新日期 -->
+                                    <div class="chart_info">
+                                        <div class="update">
+                                            <span>update:<time>2020/01/01 08:30:20</time></span>
+                                        </div>
+                                        <div class="question">
+                                            <a href="#"><img src="images/iot_icon/question.svg" alt=""></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- 雙Chart -->
+                                <div class="chart_content">
+                                    <div class="double_chart">
+                                        <div class="item">
+                                            <h4>圖表一</h4>
+                                            <div class="chart">
+                                            <figure class="highcharts-figure">
+                                                <!-- 因為雙chart 可將高度縮小 設定請看 light_setting.htm -->
+                                                <div id="basic_column9" class="h_200"></div>
+                                            </figure>
+                                            </div>
+                                        </div>
+                                        <div class="item">
+                                            <h4>圖表二</h4>
+                                            <div class="chart">
+                                            <figure class="highcharts-figure">
+                                                <div id="axes_line_column9" class="h_200"></div>
+                                            </figure>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="chart_block">
+                                <div class="chart_head">
+                                    <!-- 圖表標題 -->
+                                    <h3>雙Chart</h3>
+                                    <!-- 圖表更新日期 -->
+                                    <div class="chart_info">
+                                        <div class="update">
+                                            <span>update:<time>2020/01/01 08:30:20</time></span>
+                                        </div>
+                                        <div class="question">
+                                            <a href="#"><img src="images/iot_icon/question.svg" alt=""></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- 雙Chart -->
+                                <div class="chart_content">
+                                    <div class="double_chart">
+                                        <div class="item">
+                                            <h4>圖表一</h4>
+                                            <div class="chart">
+                                            <figure class="highcharts-figure">
+                                                <!-- 因為雙chart 可將高度縮小 設定請看 light_setting.htm -->
+                                                <div id="basic_column10" class="h_200"></div>
+                                            </figure>
+                                            </div>
+                                        </div>
+                                        <div class="item">
+                                            <h4>圖表二</h4>
+                                            <div class="chart">
+                                            <figure class="highcharts-figure">
+                                                <div id="axes_line_column10" class="h_200"></div>
+                                            </figure>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="chart_block">
+                                <div class="chart_head">
+                                    <!-- 圖表標題 -->
+                                    <h3>雙Chart</h3>
+                                    <!-- 圖表更新日期 -->
+                                    <div class="chart_info">
+                                        <div class="update">
+                                            <span>update:<time>2020/01/01 08:30:20</time></span>
+                                        </div>
+                                        <div class="question">
+                                            <a href="#"><img src="images/iot_icon/question.svg" alt=""></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- 雙Chart -->
+                                <div class="chart_content">
+                                    <div class="double_chart">
+                                        <div class="item">
+                                            <h4>圖表一</h4>
+                                            <div class="chart">
+                                            <figure class="highcharts-figure">
+                                                <!-- 因為雙chart 可將高度縮小 設定請看 light_setting.htm -->
+                                                <div id="basic_column11" class="h_200"></div>
+                                            </figure>
+                                            </div>
+                                        </div>
+                                        <div class="item">
+                                            <h4>圖表二</h4>
+                                            <div class="chart">
+                                            <figure class="highcharts-figure">
+                                                <div id="axes_line_column11" class="h_200"></div>
+                                            </figure>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- JS-->
+            <script src="js/jquery-3.3.1.min.js"></script>
+            <script src="vendor/jquery.easing.min.js"></script>
+            <!-- highchart plugin -->
+            <script src="https://code.highcharts.com/highcharts.js"></script>
+            <script src="https://code.highcharts.com/highcharts-more.js"></script>
+            <script src="https://code.highcharts.com/modules/solid-gauge.js"></script>
+            <script src="https://code.highcharts.com/modules/exporting.js"></script>
+            <script src="https://code.highcharts.com/modules/export-data.js"></script>
+            <script src="https://code.highcharts.com/modules/accessibility.js"></script>
+            <script src="https://code.highcharts.com/modules/pattern-fill.js"></script>
+            <!-- hightchart setting -->
+            <script src="js/chart_setting.js"></script>
+            <script>
+            //圖表變數
+            var _Color = ['#20A4F3', '#54CEC3', '#ffbc08', '#fe7b62', '#00b44b', '#2869b9', '#d84400', '#009e7a', '#2e3c56', '#754a28'];
+            // 基本單一Chart
+            Highcharts.chart('basic_column1', {
+                chart: {
+                    type: 'column'
+                },
+                title: {
+                    text: '圖表標題(可省略)'
+                },
+                subtitle: {
+                    text: ''
+                },
+                colors: _Color,
+                xAxis: {
+                    categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
+                    crosshair: true
+                },
+                yAxis: {
+                    min: 0,
+                    title: {
+                        text: 'Rainfall (mm)'
+                    }
+                },
+                tooltip: {
+                    headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
+                    pointFormat: '<tr><td style="color:{series.color};padding:0">{series.name}: </td>' + '<td style="padding:0"><b>{point.y:.1f} mm</b></td></tr>',
+                    footerFormat: '</table>',
+                    shared: true,
+                    useHTML: true
+                },
+                plotOptions: {
+                    column: {
+                        pointPadding: 0.2,
+                        borderWidth: 0
+                    }
+                },
+                series: [{
+                    name: 'Tokyo',
+                    data: [49.9, 71.5, 106.4, 129.2, 144.0, 176.0, 135.6, 148.5, 216.4, 194.1, 95.6, 54.4]
+                }, {
+                    name: 'New York',
+                    data: [83.6, 78.8, 98.5, 93.4, 106.0, 84.5, 105.0, 104.3, 91.2, 83.5, 106.6, 92.3]
+                }, {
+                    name: 'London',
+                    data: [48.9, 38.8, 39.3, 41.4, 47.0, 48.3, 59.0, 59.6, 52.4, 65.2, 59.3, 51.2]
+                }, {
+                    name: 'Berlin',
+                    data: [42.4, 33.2, 34.5, 39.7, 52.6, 75.5, 57.4, 60.4, 47.6, 39.1, 46.8, 51.1]
+                }]
+            });
+            Highcharts.chart('basic_column2', {
+                chart: {
+                    type: 'column'
+                },
+                title: {
+                    text: '圖表標題(可省略)'
+                },
+                subtitle: {
+                    text: ''
+                },
+                colors: _Color,
+                xAxis: {
+                    categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
+                    crosshair: true
+                },
+                yAxis: {
+                    min: 0,
+                    title: {
+                        text: 'Rainfall (mm)'
+                    }
+                },
+                tooltip: {
+                    headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
+                    pointFormat: '<tr><td style="color:{series.color};padding:0">{series.name}: </td>' + '<td style="padding:0"><b>{point.y:.1f} mm</b></td></tr>',
+                    footerFormat: '</table>',
+                    shared: true,
+                    useHTML: true
+                },
+                plotOptions: {
+                    column: {
+                        pointPadding: 0.2,
+                        borderWidth: 0
+                    }
+                },
+                series: [{
+                    name: 'Tokyo',
+                    data: [49.9, 71.5, 106.4, 129.2, 144.0, 176.0, 135.6, 148.5, 216.4, 194.1, 95.6, 54.4]
+                }, {
+                    name: 'New York',
+                    data: [83.6, 78.8, 98.5, 93.4, 106.0, 84.5, 105.0, 104.3, 91.2, 83.5, 106.6, 92.3]
+                }, {
+                    name: 'London',
+                    data: [48.9, 38.8, 39.3, 41.4, 47.0, 48.3, 59.0, 59.6, 52.4, 65.2, 59.3, 51.2]
+                }, {
+                    name: 'Berlin',
+                    data: [42.4, 33.2, 34.5, 39.7, 52.6, 75.5, 57.4, 60.4, 47.6, 39.1, 46.8, 51.1]
+                }]
+            });
+            Highcharts.chart('basic_column3', {
+                chart: {
+                    type: 'column'
+                },
+                title: {
+                    text: '圖表標題(可省略)'
+                },
+                subtitle: {
+                    text: ''
+                },
+                colors: _Color,
+                xAxis: {
+                    categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
+                    crosshair: true
+                },
+                yAxis: {
+                    min: 0,
+                    title: {
+                        text: 'Rainfall (mm)'
+                    }
+                },
+                tooltip: {
+                    headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
+                    pointFormat: '<tr><td style="color:{series.color};padding:0">{series.name}: </td>' + '<td style="padding:0"><b>{point.y:.1f} mm</b></td></tr>',
+                    footerFormat: '</table>',
+                    shared: true,
+                    useHTML: true
+                },
+                plotOptions: {
+                    column: {
+                        pointPadding: 0.2,
+                        borderWidth: 0
+                    }
+                },
+                series: [{
+                    name: 'Tokyo',
+                    data: [49.9, 71.5, 106.4, 129.2, 144.0, 176.0, 135.6, 148.5, 216.4, 194.1, 95.6, 54.4]
+                }, {
+                    name: 'New York',
+                    data: [83.6, 78.8, 98.5, 93.4, 106.0, 84.5, 105.0, 104.3, 91.2, 83.5, 106.6, 92.3]
+                }, {
+                    name: 'London',
+                    data: [48.9, 38.8, 39.3, 41.4, 47.0, 48.3, 59.0, 59.6, 52.4, 65.2, 59.3, 51.2]
+                }, {
+                    name: 'Berlin',
+                    data: [42.4, 33.2, 34.5, 39.7, 52.6, 75.5, 57.4, 60.4, 47.6, 39.1, 46.8, 51.1]
+                }]
+            });
+            Highcharts.chart('basic_column4', {
+                chart: {
+                    type: 'column'
+                },
+                title: {
+                    text: '圖表標題(可省略)'
+                },
+                subtitle: {
+                    text: ''
+                },
+                colors: _Color,
+                xAxis: {
+                    categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
+                    crosshair: true
+                },
+                yAxis: {
+                    min: 0,
+                    title: {
+                        text: 'Rainfall (mm)'
+                    }
+                },
+                tooltip: {
+                    headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
+                    pointFormat: '<tr><td style="color:{series.color};padding:0">{series.name}: </td>' + '<td style="padding:0"><b>{point.y:.1f} mm</b></td></tr>',
+                    footerFormat: '</table>',
+                    shared: true,
+                    useHTML: true
+                },
+                plotOptions: {
+                    column: {
+                        pointPadding: 0.2,
+                        borderWidth: 0
+                    }
+                },
+                series: [{
+                    name: 'Tokyo',
+                    data: [49.9, 71.5, 106.4, 129.2, 144.0, 176.0, 135.6, 148.5, 216.4, 194.1, 95.6, 54.4]
+                }, {
+                    name: 'New York',
+                    data: [83.6, 78.8, 98.5, 93.4, 106.0, 84.5, 105.0, 104.3, 91.2, 83.5, 106.6, 92.3]
+                }, {
+                    name: 'London',
+                    data: [48.9, 38.8, 39.3, 41.4, 47.0, 48.3, 59.0, 59.6, 52.4, 65.2, 59.3, 51.2]
+                }, {
+                    name: 'Berlin',
+                    data: [42.4, 33.2, 34.5, 39.7, 52.6, 75.5, 57.4, 60.4, 47.6, 39.1, 46.8, 51.1]
+                }]
+            });
+            Highcharts.chart('basic_column5', {
+                chart: {
+                    type: 'column'
+                },
+                title: {
+                    text: '圖表標題(可省略)'
+                },
+                subtitle: {
+                    text: ''
+                },
+                colors: _Color,
+                xAxis: {
+                    categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
+                    crosshair: true
+                },
+                yAxis: {
+                    min: 0,
+                    title: {
+                        text: 'Rainfall (mm)'
+                    }
+                },
+                tooltip: {
+                    headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
+                    pointFormat: '<tr><td style="color:{series.color};padding:0">{series.name}: </td>' + '<td style="padding:0"><b>{point.y:.1f} mm</b></td></tr>',
+                    footerFormat: '</table>',
+                    shared: true,
+                    useHTML: true
+                },
+                plotOptions: {
+                    column: {
+                        pointPadding: 0.2,
+                        borderWidth: 0
+                    }
+                },
+                series: [{
+                    name: 'Tokyo',
+                    data: [49.9, 71.5, 106.4, 129.2, 144.0, 176.0, 135.6, 148.5, 216.4, 194.1, 95.6, 54.4]
+                }, {
+                    name: 'New York',
+                    data: [83.6, 78.8, 98.5, 93.4, 106.0, 84.5, 105.0, 104.3, 91.2, 83.5, 106.6, 92.3]
+                }, {
+                    name: 'London',
+                    data: [48.9, 38.8, 39.3, 41.4, 47.0, 48.3, 59.0, 59.6, 52.4, 65.2, 59.3, 51.2]
+                }, {
+                    name: 'Berlin',
+                    data: [42.4, 33.2, 34.5, 39.7, 52.6, 75.5, 57.4, 60.4, 47.6, 39.1, 46.8, 51.1]
+                }]
+            });
+            Highcharts.chart('basic_column6', {
+                chart: {
+                    type: 'column'
+                },
+                title: {
+                    text: '圖表標題(可省略)'
+                },
+                subtitle: {
+                    text: ''
+                },
+                colors: _Color,
+                xAxis: {
+                    categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
+                    crosshair: true
+                },
+                yAxis: {
+                    min: 0,
+                    title: {
+                        text: 'Rainfall (mm)'
+                    }
+                },
+                tooltip: {
+                    headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
+                    pointFormat: '<tr><td style="color:{series.color};padding:0">{series.name}: </td>' + '<td style="padding:0"><b>{point.y:.1f} mm</b></td></tr>',
+                    footerFormat: '</table>',
+                    shared: true,
+                    useHTML: true
+                },
+                plotOptions: {
+                    column: {
+                        pointPadding: 0.2,
+                        borderWidth: 0
+                    }
+                },
+                series: [{
+                    name: 'Tokyo',
+                    data: [49.9, 71.5, 106.4, 129.2, 144.0, 176.0, 135.6, 148.5, 216.4, 194.1, 95.6, 54.4]
+                }, {
+                    name: 'New York',
+                    data: [83.6, 78.8, 98.5, 93.4, 106.0, 84.5, 105.0, 104.3, 91.2, 83.5, 106.6, 92.3]
+                }, {
+                    name: 'London',
+                    data: [48.9, 38.8, 39.3, 41.4, 47.0, 48.3, 59.0, 59.6, 52.4, 65.2, 59.3, 51.2]
+                }, {
+                    name: 'Berlin',
+                    data: [42.4, 33.2, 34.5, 39.7, 52.6, 75.5, 57.4, 60.4, 47.6, 39.1, 46.8, 51.1]
+                }]
+            });
+            Highcharts.chart('basic_column7', {
+                chart: {
+                    type: 'column'
+                },
+                title: {
+                    text: '圖表標題(可省略)'
+                },
+                subtitle: {
+                    text: ''
+                },
+                colors: _Color,
+                xAxis: {
+                    categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
+                    crosshair: true
+                },
+                yAxis: {
+                    min: 0,
+                    title: {
+                        text: 'Rainfall (mm)'
+                    }
+                },
+                tooltip: {
+                    headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
+                    pointFormat: '<tr><td style="color:{series.color};padding:0">{series.name}: </td>' + '<td style="padding:0"><b>{point.y:.1f} mm</b></td></tr>',
+                    footerFormat: '</table>',
+                    shared: true,
+                    useHTML: true
+                },
+                plotOptions: {
+                    column: {
+                        pointPadding: 0.2,
+                        borderWidth: 0
+                    }
+                },
+                series: [{
+                    name: 'Tokyo',
+                    data: [49.9, 71.5, 106.4, 129.2, 144.0, 176.0, 135.6, 148.5, 216.4, 194.1, 95.6, 54.4]
+                }, {
+                    name: 'New York',
+                    data: [83.6, 78.8, 98.5, 93.4, 106.0, 84.5, 105.0, 104.3, 91.2, 83.5, 106.6, 92.3]
+                }, {
+                    name: 'London',
+                    data: [48.9, 38.8, 39.3, 41.4, 47.0, 48.3, 59.0, 59.6, 52.4, 65.2, 59.3, 51.2]
+                }, {
+                    name: 'Berlin',
+                    data: [42.4, 33.2, 34.5, 39.7, 52.6, 75.5, 57.4, 60.4, 47.6, 39.1, 46.8, 51.1]
+                }]
+            });
+            Highcharts.chart('basic_column8', {
+                chart: {
+                    type: 'column'
+                },
+                title: {
+                    text: '圖表標題(可省略)'
+                },
+                subtitle: {
+                    text: ''
+                },
+                colors: _Color,
+                xAxis: {
+                    categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
+                    crosshair: true
+                },
+                yAxis: {
+                    min: 0,
+                    title: {
+                        text: 'Rainfall (mm)'
+                    }
+                },
+                tooltip: {
+                    headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
+                    pointFormat: '<tr><td style="color:{series.color};padding:0">{series.name}: </td>' + '<td style="padding:0"><b>{point.y:.1f} mm</b></td></tr>',
+                    footerFormat: '</table>',
+                    shared: true,
+                    useHTML: true
+                },
+                plotOptions: {
+                    column: {
+                        pointPadding: 0.2,
+                        borderWidth: 0
+                    }
+                },
+                series: [{
+                    name: 'Tokyo',
+                    data: [49.9, 71.5, 106.4, 129.2, 144.0, 176.0, 135.6, 148.5, 216.4, 194.1, 95.6, 54.4]
+                }, {
+                    name: 'New York',
+                    data: [83.6, 78.8, 98.5, 93.4, 106.0, 84.5, 105.0, 104.3, 91.2, 83.5, 106.6, 92.3]
+                }, {
+                    name: 'London',
+                    data: [48.9, 38.8, 39.3, 41.4, 47.0, 48.3, 59.0, 59.6, 52.4, 65.2, 59.3, 51.2]
+                }, {
+                    name: 'Berlin',
+                    data: [42.4, 33.2, 34.5, 39.7, 52.6, 75.5, 57.4, 60.4, 47.6, 39.1, 46.8, 51.1]
+                }]
+            });
+            Highcharts.chart('basic_column9', {
+                chart: {
+                    type: 'column'
+                },
+                title: {
+                    text: '圖表標題(可省略)'
+                },
+                subtitle: {
+                    text: ''
+                },
+                colors: _Color,
+                xAxis: {
+                    categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
+                    crosshair: true
+                },
+                yAxis: {
+                    min: 0,
+                    title: {
+                        text: 'Rainfall (mm)'
+                    }
+                },
+                tooltip: {
+                    headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
+                    pointFormat: '<tr><td style="color:{series.color};padding:0">{series.name}: </td>' + '<td style="padding:0"><b>{point.y:.1f} mm</b></td></tr>',
+                    footerFormat: '</table>',
+                    shared: true,
+                    useHTML: true
+                },
+                plotOptions: {
+                    column: {
+                        pointPadding: 0.2,
+                        borderWidth: 0
+                    }
+                },
+                series: [{
+                    name: 'Tokyo',
+                    data: [49.9, 71.5, 106.4, 129.2, 144.0, 176.0, 135.6, 148.5, 216.4, 194.1, 95.6, 54.4]
+                }, {
+                    name: 'New York',
+                    data: [83.6, 78.8, 98.5, 93.4, 106.0, 84.5, 105.0, 104.3, 91.2, 83.5, 106.6, 92.3]
+                }, {
+                    name: 'London',
+                    data: [48.9, 38.8, 39.3, 41.4, 47.0, 48.3, 59.0, 59.6, 52.4, 65.2, 59.3, 51.2]
+                }, {
+                    name: 'Berlin',
+                    data: [42.4, 33.2, 34.5, 39.7, 52.6, 75.5, 57.4, 60.4, 47.6, 39.1, 46.8, 51.1]
+                }]
+            });
+            Highcharts.chart('basic_column10', {
+                chart: {
+                    type: 'column'
+                },
+                title: {
+                    text: '圖表標題(可省略)'
+                },
+                subtitle: {
+                    text: ''
+                },
+                colors: _Color,
+                xAxis: {
+                    categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
+                    crosshair: true
+                },
+                yAxis: {
+                    min: 0,
+                    title: {
+                        text: 'Rainfall (mm)'
+                    }
+                },
+                tooltip: {
+                    headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
+                    pointFormat: '<tr><td style="color:{series.color};padding:0">{series.name}: </td>' + '<td style="padding:0"><b>{point.y:.1f} mm</b></td></tr>',
+                    footerFormat: '</table>',
+                    shared: true,
+                    useHTML: true
+                },
+                plotOptions: {
+                    column: {
+                        pointPadding: 0.2,
+                        borderWidth: 0
+                    }
+                },
+                series: [{
+                    name: 'Tokyo',
+                    data: [49.9, 71.5, 106.4, 129.2, 144.0, 176.0, 135.6, 148.5, 216.4, 194.1, 95.6, 54.4]
+                }, {
+                    name: 'New York',
+                    data: [83.6, 78.8, 98.5, 93.4, 106.0, 84.5, 105.0, 104.3, 91.2, 83.5, 106.6, 92.3]
+                }, {
+                    name: 'London',
+                    data: [48.9, 38.8, 39.3, 41.4, 47.0, 48.3, 59.0, 59.6, 52.4, 65.2, 59.3, 51.2]
+                }, {
+                    name: 'Berlin',
+                    data: [42.4, 33.2, 34.5, 39.7, 52.6, 75.5, 57.4, 60.4, 47.6, 39.1, 46.8, 51.1]
+                }]
+            });
+            Highcharts.chart('basic_column11', {
+                chart: {
+                    type: 'column'
+                },
+                title: {
+                    text: '圖表標題(可省略)'
+                },
+                subtitle: {
+                    text: ''
+                },
+                colors: _Color,
+                xAxis: {
+                    categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
+                    crosshair: true
+                },
+                yAxis: {
+                    min: 0,
+                    title: {
+                        text: 'Rainfall (mm)'
+                    }
+                },
+                tooltip: {
+                    headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
+                    pointFormat: '<tr><td style="color:{series.color};padding:0">{series.name}: </td>' + '<td style="padding:0"><b>{point.y:.1f} mm</b></td></tr>',
+                    footerFormat: '</table>',
+                    shared: true,
+                    useHTML: true
+                },
+                plotOptions: {
+                    column: {
+                        pointPadding: 0.2,
+                        borderWidth: 0
+                    }
+                },
+                series: [{
+                    name: 'Tokyo',
+                    data: [49.9, 71.5, 106.4, 129.2, 144.0, 176.0, 135.6, 148.5, 216.4, 194.1, 95.6, 54.4]
+                }, {
+                    name: 'New York',
+                    data: [83.6, 78.8, 98.5, 93.4, 106.0, 84.5, 105.0, 104.3, 91.2, 83.5, 106.6, 92.3]
+                }, {
+                    name: 'London',
+                    data: [48.9, 38.8, 39.3, 41.4, 47.0, 48.3, 59.0, 59.6, 52.4, 65.2, 59.3, 51.2]
+                }, {
+                    name: 'Berlin',
+                    data: [42.4, 33.2, 34.5, 39.7, 52.6, 75.5, 57.4, 60.4, 47.6, 39.1, 46.8, 51.1]
+                }]
+            });
+            // 長條結合折線圖
+            Highcharts.chart('axes_line_column1', {
+                chart: {
+                    zoomType: 'xy'
+                },
+                title: {
+                    text: 'Average Monthly Temperature and Rainfall in Tokyo'
+                },
+                subtitle: {
+                    text: 'Source: WorldClimate.com'
+                },
+                colors: _Color,
+                xAxis: [{
+                    categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
+                    crosshair: true
+                }],
+                yAxis: [{ // Primary yAxis
+                    labels: {
+                        format: '{value}°C',
+                        style: {
+                            color: Highcharts.getOptions().colors[1]
+                        }
+                    },
+                    title: {
+                        text: 'Temperature',
+                        style: {
+                            color: Highcharts.getOptions().colors[1]
+                        }
+                    }
+                }, { // Secondary yAxis
+                    title: {
+                        text: 'Rainfall',
+                        style: {
+                            color: Highcharts.getOptions().colors[0]
+                        }
+                    },
+                    labels: {
+                        format: '{value} mm',
+                        style: {
+                            color: Highcharts.getOptions().colors[0]
+                        }
+                    },
+                    opposite: true
+                }],
+                tooltip: {
+                    shared: true
+                },
+                legend: {
+                    layout: 'vertical',
+                    align: 'left',
+                    x: 120,
+                    verticalAlign: 'top',
+                    y: 100,
+                    floating: true,
+                    backgroundColor: Highcharts.defaultOptions.legend.backgroundColor || // theme
+                        'rgba(255,255,255,0.25)'
+                },
+                series: [{
+                    name: 'Rainfall',
+                    type: 'column',
+                    yAxis: 1,
+                    data: [49.9, 71.5, 106.4, 129.2, 144.0, 176.0, 135.6, 148.5, 216.4, 194.1, 95.6, 54.4],
+                    tooltip: {
+                        valueSuffix: ' mm'
+                    }
+                }, {
+                    name: 'Temperature',
+                    type: 'spline',
+                    data: [7.0, 6.9, 9.5, 14.5, 18.2, 21.5, 25.2, 26.5, 23.3, 18.3, 13.9, 9.6],
+                    tooltip: {
+                        valueSuffix: '°C'
+                    }
+                }]
+            });
+            Highcharts.chart('axes_line_column2', {
+                chart: {
+                    zoomType: 'xy'
+                },
+                title: {
+                    text: 'Average Monthly Temperature and Rainfall in Tokyo'
+                },
+                subtitle: {
+                    text: 'Source: WorldClimate.com'
+                },
+                colors: _Color,
+                xAxis: [{
+                    categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
+                    crosshair: true
+                }],
+                yAxis: [{ // Primary yAxis
+                    labels: {
+                        format: '{value}°C',
+                        style: {
+                            color: Highcharts.getOptions().colors[1]
+                        }
+                    },
+                    title: {
+                        text: 'Temperature',
+                        style: {
+                            color: Highcharts.getOptions().colors[1]
+                        }
+                    }
+                }, { // Secondary yAxis
+                    title: {
+                        text: 'Rainfall',
+                        style: {
+                            color: Highcharts.getOptions().colors[0]
+                        }
+                    },
+                    labels: {
+                        format: '{value} mm',
+                        style: {
+                            color: Highcharts.getOptions().colors[0]
+                        }
+                    },
+                    opposite: true
+                }],
+                tooltip: {
+                    shared: true
+                },
+                legend: {
+                    layout: 'vertical',
+                    align: 'left',
+                    x: 120,
+                    verticalAlign: 'top',
+                    y: 100,
+                    floating: true,
+                    backgroundColor: Highcharts.defaultOptions.legend.backgroundColor || // theme
+                        'rgba(255,255,255,0.25)'
+                },
+                series: [{
+                    name: 'Rainfall',
+                    type: 'column',
+                    yAxis: 1,
+                    data: [49.9, 71.5, 106.4, 129.2, 144.0, 176.0, 135.6, 148.5, 216.4, 194.1, 95.6, 54.4],
+                    tooltip: {
+                        valueSuffix: ' mm'
+                    }
+                }, {
+                    name: 'Temperature',
+                    type: 'spline',
+                    data: [7.0, 6.9, 9.5, 14.5, 18.2, 21.5, 25.2, 26.5, 23.3, 18.3, 13.9, 9.6],
+                    tooltip: {
+                        valueSuffix: '°C'
+                    }
+                }]
+            });
+            Highcharts.chart('axes_line_column3', {
+                chart: {
+                    zoomType: 'xy'
+                },
+                title: {
+                    text: 'Average Monthly Temperature and Rainfall in Tokyo'
+                },
+                subtitle: {
+                    text: 'Source: WorldClimate.com'
+                },
+                colors: _Color,
+                xAxis: [{
+                    categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
+                    crosshair: true
+                }],
+                yAxis: [{ // Primary yAxis
+                    labels: {
+                        format: '{value}°C',
+                        style: {
+                            color: Highcharts.getOptions().colors[1]
+                        }
+                    },
+                    title: {
+                        text: 'Temperature',
+                        style: {
+                            color: Highcharts.getOptions().colors[1]
+                        }
+                    }
+                }, { // Secondary yAxis
+                    title: {
+                        text: 'Rainfall',
+                        style: {
+                            color: Highcharts.getOptions().colors[0]
+                        }
+                    },
+                    labels: {
+                        format: '{value} mm',
+                        style: {
+                            color: Highcharts.getOptions().colors[0]
+                        }
+                    },
+                    opposite: true
+                }],
+                tooltip: {
+                    shared: true
+                },
+                legend: {
+                    layout: 'vertical',
+                    align: 'left',
+                    x: 120,
+                    verticalAlign: 'top',
+                    y: 100,
+                    floating: true,
+                    backgroundColor: Highcharts.defaultOptions.legend.backgroundColor || // theme
+                        'rgba(255,255,255,0.25)'
+                },
+                series: [{
+                    name: 'Rainfall',
+                    type: 'column',
+                    yAxis: 1,
+                    data: [49.9, 71.5, 106.4, 129.2, 144.0, 176.0, 135.6, 148.5, 216.4, 194.1, 95.6, 54.4],
+                    tooltip: {
+                        valueSuffix: ' mm'
+                    }
+                }, {
+                    name: 'Temperature',
+                    type: 'spline',
+                    data: [7.0, 6.9, 9.5, 14.5, 18.2, 21.5, 25.2, 26.5, 23.3, 18.3, 13.9, 9.6],
+                    tooltip: {
+                        valueSuffix: '°C'
+                    }
+                }]
+            });
+            Highcharts.chart('axes_line_column4', {
+                chart: {
+                    zoomType: 'xy'
+                },
+                title: {
+                    text: 'Average Monthly Temperature and Rainfall in Tokyo'
+                },
+                subtitle: {
+                    text: 'Source: WorldClimate.com'
+                },
+                colors: _Color,
+                xAxis: [{
+                    categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
+                    crosshair: true
+                }],
+                yAxis: [{ // Primary yAxis
+                    labels: {
+                        format: '{value}°C',
+                        style: {
+                            color: Highcharts.getOptions().colors[1]
+                        }
+                    },
+                    title: {
+                        text: 'Temperature',
+                        style: {
+                            color: Highcharts.getOptions().colors[1]
+                        }
+                    }
+                }, { // Secondary yAxis
+                    title: {
+                        text: 'Rainfall',
+                        style: {
+                            color: Highcharts.getOptions().colors[0]
+                        }
+                    },
+                    labels: {
+                        format: '{value} mm',
+                        style: {
+                            color: Highcharts.getOptions().colors[0]
+                        }
+                    },
+                    opposite: true
+                }],
+                tooltip: {
+                    shared: true
+                },
+                legend: {
+                    layout: 'vertical',
+                    align: 'left',
+                    x: 120,
+                    verticalAlign: 'top',
+                    y: 100,
+                    floating: true,
+                    backgroundColor: Highcharts.defaultOptions.legend.backgroundColor || // theme
+                        'rgba(255,255,255,0.25)'
+                },
+                series: [{
+                    name: 'Rainfall',
+                    type: 'column',
+                    yAxis: 1,
+                    data: [49.9, 71.5, 106.4, 129.2, 144.0, 176.0, 135.6, 148.5, 216.4, 194.1, 95.6, 54.4],
+                    tooltip: {
+                        valueSuffix: ' mm'
+                    }
+                }, {
+                    name: 'Temperature',
+                    type: 'spline',
+                    data: [7.0, 6.9, 9.5, 14.5, 18.2, 21.5, 25.2, 26.5, 23.3, 18.3, 13.9, 9.6],
+                    tooltip: {
+                        valueSuffix: '°C'
+                    }
+                }]
+            });
+            Highcharts.chart('axes_line_column5', {
+                chart: {
+                    zoomType: 'xy'
+                },
+                title: {
+                    text: 'Average Monthly Temperature and Rainfall in Tokyo'
+                },
+                subtitle: {
+                    text: 'Source: WorldClimate.com'
+                },
+                colors: _Color,
+                xAxis: [{
+                    categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
+                    crosshair: true
+                }],
+                yAxis: [{ // Primary yAxis
+                    labels: {
+                        format: '{value}°C',
+                        style: {
+                            color: Highcharts.getOptions().colors[1]
+                        }
+                    },
+                    title: {
+                        text: 'Temperature',
+                        style: {
+                            color: Highcharts.getOptions().colors[1]
+                        }
+                    }
+                }, { // Secondary yAxis
+                    title: {
+                        text: 'Rainfall',
+                        style: {
+                            color: Highcharts.getOptions().colors[0]
+                        }
+                    },
+                    labels: {
+                        format: '{value} mm',
+                        style: {
+                            color: Highcharts.getOptions().colors[0]
+                        }
+                    },
+                    opposite: true
+                }],
+                tooltip: {
+                    shared: true
+                },
+                legend: {
+                    layout: 'vertical',
+                    align: 'left',
+                    x: 120,
+                    verticalAlign: 'top',
+                    y: 100,
+                    floating: true,
+                    backgroundColor: Highcharts.defaultOptions.legend.backgroundColor || // theme
+                        'rgba(255,255,255,0.25)'
+                },
+                series: [{
+                    name: 'Rainfall',
+                    type: 'column',
+                    yAxis: 1,
+                    data: [49.9, 71.5, 106.4, 129.2, 144.0, 176.0, 135.6, 148.5, 216.4, 194.1, 95.6, 54.4],
+                    tooltip: {
+                        valueSuffix: ' mm'
+                    }
+                }, {
+                    name: 'Temperature',
+                    type: 'spline',
+                    data: [7.0, 6.9, 9.5, 14.5, 18.2, 21.5, 25.2, 26.5, 23.3, 18.3, 13.9, 9.6],
+                    tooltip: {
+                        valueSuffix: '°C'
+                    }
+                }]
+            });
+            Highcharts.chart('axes_line_column6', {
+                chart: {
+                    zoomType: 'xy'
+                },
+                title: {
+                    text: 'Average Monthly Temperature and Rainfall in Tokyo'
+                },
+                subtitle: {
+                    text: 'Source: WorldClimate.com'
+                },
+                colors: _Color,
+                xAxis: [{
+                    categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
+                    crosshair: true
+                }],
+                yAxis: [{ // Primary yAxis
+                    labels: {
+                        format: '{value}°C',
+                        style: {
+                            color: Highcharts.getOptions().colors[1]
+                        }
+                    },
+                    title: {
+                        text: 'Temperature',
+                        style: {
+                            color: Highcharts.getOptions().colors[1]
+                        }
+                    }
+                }, { // Secondary yAxis
+                    title: {
+                        text: 'Rainfall',
+                        style: {
+                            color: Highcharts.getOptions().colors[0]
+                        }
+                    },
+                    labels: {
+                        format: '{value} mm',
+                        style: {
+                            color: Highcharts.getOptions().colors[0]
+                        }
+                    },
+                    opposite: true
+                }],
+                tooltip: {
+                    shared: true
+                },
+                legend: {
+                    layout: 'vertical',
+                    align: 'left',
+                    x: 120,
+                    verticalAlign: 'top',
+                    y: 100,
+                    floating: true,
+                    backgroundColor: Highcharts.defaultOptions.legend.backgroundColor || // theme
+                        'rgba(255,255,255,0.25)'
+                },
+                series: [{
+                    name: 'Rainfall',
+                    type: 'column',
+                    yAxis: 1,
+                    data: [49.9, 71.5, 106.4, 129.2, 144.0, 176.0, 135.6, 148.5, 216.4, 194.1, 95.6, 54.4],
+                    tooltip: {
+                        valueSuffix: ' mm'
+                    }
+                }, {
+                    name: 'Temperature',
+                    type: 'spline',
+                    data: [7.0, 6.9, 9.5, 14.5, 18.2, 21.5, 25.2, 26.5, 23.3, 18.3, 13.9, 9.6],
+                    tooltip: {
+                        valueSuffix: '°C'
+                    }
+                }]
+            });
+            Highcharts.chart('axes_line_column7', {
+                chart: {
+                    zoomType: 'xy'
+                },
+                title: {
+                    text: 'Average Monthly Temperature and Rainfall in Tokyo'
+                },
+                subtitle: {
+                    text: 'Source: WorldClimate.com'
+                },
+                colors: _Color,
+                xAxis: [{
+                    categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
+                    crosshair: true
+                }],
+                yAxis: [{ // Primary yAxis
+                    labels: {
+                        format: '{value}°C',
+                        style: {
+                            color: Highcharts.getOptions().colors[1]
+                        }
+                    },
+                    title: {
+                        text: 'Temperature',
+                        style: {
+                            color: Highcharts.getOptions().colors[1]
+                        }
+                    }
+                }, { // Secondary yAxis
+                    title: {
+                        text: 'Rainfall',
+                        style: {
+                            color: Highcharts.getOptions().colors[0]
+                        }
+                    },
+                    labels: {
+                        format: '{value} mm',
+                        style: {
+                            color: Highcharts.getOptions().colors[0]
+                        }
+                    },
+                    opposite: true
+                }],
+                tooltip: {
+                    shared: true
+                },
+                legend: {
+                    layout: 'vertical',
+                    align: 'left',
+                    x: 120,
+                    verticalAlign: 'top',
+                    y: 100,
+                    floating: true,
+                    backgroundColor: Highcharts.defaultOptions.legend.backgroundColor || // theme
+                        'rgba(255,255,255,0.25)'
+                },
+                series: [{
+                    name: 'Rainfall',
+                    type: 'column',
+                    yAxis: 1,
+                    data: [49.9, 71.5, 106.4, 129.2, 144.0, 176.0, 135.6, 148.5, 216.4, 194.1, 95.6, 54.4],
+                    tooltip: {
+                        valueSuffix: ' mm'
+                    }
+                }, {
+                    name: 'Temperature',
+                    type: 'spline',
+                    data: [7.0, 6.9, 9.5, 14.5, 18.2, 21.5, 25.2, 26.5, 23.3, 18.3, 13.9, 9.6],
+                    tooltip: {
+                        valueSuffix: '°C'
+                    }
+                }]
+            });
+            Highcharts.chart('axes_line_column8', {
+                chart: {
+                    zoomType: 'xy'
+                },
+                title: {
+                    text: 'Average Monthly Temperature and Rainfall in Tokyo'
+                },
+                subtitle: {
+                    text: 'Source: WorldClimate.com'
+                },
+                colors: _Color,
+                xAxis: [{
+                    categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
+                    crosshair: true
+                }],
+                yAxis: [{ // Primary yAxis
+                    labels: {
+                        format: '{value}°C',
+                        style: {
+                            color: Highcharts.getOptions().colors[1]
+                        }
+                    },
+                    title: {
+                        text: 'Temperature',
+                        style: {
+                            color: Highcharts.getOptions().colors[1]
+                        }
+                    }
+                }, { // Secondary yAxis
+                    title: {
+                        text: 'Rainfall',
+                        style: {
+                            color: Highcharts.getOptions().colors[0]
+                        }
+                    },
+                    labels: {
+                        format: '{value} mm',
+                        style: {
+                            color: Highcharts.getOptions().colors[0]
+                        }
+                    },
+                    opposite: true
+                }],
+                tooltip: {
+                    shared: true
+                },
+                legend: {
+                    layout: 'vertical',
+                    align: 'left',
+                    x: 120,
+                    verticalAlign: 'top',
+                    y: 100,
+                    floating: true,
+                    backgroundColor: Highcharts.defaultOptions.legend.backgroundColor || // theme
+                        'rgba(255,255,255,0.25)'
+                },
+                series: [{
+                    name: 'Rainfall',
+                    type: 'column',
+                    yAxis: 1,
+                    data: [49.9, 71.5, 106.4, 129.2, 144.0, 176.0, 135.6, 148.5, 216.4, 194.1, 95.6, 54.4],
+                    tooltip: {
+                        valueSuffix: ' mm'
+                    }
+                }, {
+                    name: 'Temperature',
+                    type: 'spline',
+                    data: [7.0, 6.9, 9.5, 14.5, 18.2, 21.5, 25.2, 26.5, 23.3, 18.3, 13.9, 9.6],
+                    tooltip: {
+                        valueSuffix: '°C'
+                    }
+                }]
+            });
+            Highcharts.chart('axes_line_column9', {
+                chart: {
+                    zoomType: 'xy'
+                },
+                title: {
+                    text: 'Average Monthly Temperature and Rainfall in Tokyo'
+                },
+                subtitle: {
+                    text: 'Source: WorldClimate.com'
+                },
+                colors: _Color,
+                xAxis: [{
+                    categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
+                    crosshair: true
+                }],
+                yAxis: [{ // Primary yAxis
+                    labels: {
+                        format: '{value}°C',
+                        style: {
+                            color: Highcharts.getOptions().colors[1]
+                        }
+                    },
+                    title: {
+                        text: 'Temperature',
+                        style: {
+                            color: Highcharts.getOptions().colors[1]
+                        }
+                    }
+                }, { // Secondary yAxis
+                    title: {
+                        text: 'Rainfall',
+                        style: {
+                            color: Highcharts.getOptions().colors[0]
+                        }
+                    },
+                    labels: {
+                        format: '{value} mm',
+                        style: {
+                            color: Highcharts.getOptions().colors[0]
+                        }
+                    },
+                    opposite: true
+                }],
+                tooltip: {
+                    shared: true
+                },
+                legend: {
+                    layout: 'vertical',
+                    align: 'left',
+                    x: 120,
+                    verticalAlign: 'top',
+                    y: 100,
+                    floating: true,
+                    backgroundColor: Highcharts.defaultOptions.legend.backgroundColor || // theme
+                        'rgba(255,255,255,0.25)'
+                },
+                series: [{
+                    name: 'Rainfall',
+                    type: 'column',
+                    yAxis: 1,
+                    data: [49.9, 71.5, 106.4, 129.2, 144.0, 176.0, 135.6, 148.5, 216.4, 194.1, 95.6, 54.4],
+                    tooltip: {
+                        valueSuffix: ' mm'
+                    }
+                }, {
+                    name: 'Temperature',
+                    type: 'spline',
+                    data: [7.0, 6.9, 9.5, 14.5, 18.2, 21.5, 25.2, 26.5, 23.3, 18.3, 13.9, 9.6],
+                    tooltip: {
+                        valueSuffix: '°C'
+                    }
+                }]
+            });
+            Highcharts.chart('axes_line_column10', {
+                chart: {
+                    zoomType: 'xy'
+                },
+                title: {
+                    text: 'Average Monthly Temperature and Rainfall in Tokyo'
+                },
+                subtitle: {
+                    text: 'Source: WorldClimate.com'
+                },
+                colors: _Color,
+                xAxis: [{
+                    categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
+                    crosshair: true
+                }],
+                yAxis: [{ // Primary yAxis
+                    labels: {
+                        format: '{value}°C',
+                        style: {
+                            color: Highcharts.getOptions().colors[1]
+                        }
+                    },
+                    title: {
+                        text: 'Temperature',
+                        style: {
+                            color: Highcharts.getOptions().colors[1]
+                        }
+                    }
+                }, { // Secondary yAxis
+                    title: {
+                        text: 'Rainfall',
+                        style: {
+                            color: Highcharts.getOptions().colors[0]
+                        }
+                    },
+                    labels: {
+                        format: '{value} mm',
+                        style: {
+                            color: Highcharts.getOptions().colors[0]
+                        }
+                    },
+                    opposite: true
+                }],
+                tooltip: {
+                    shared: true
+                },
+                legend: {
+                    layout: 'vertical',
+                    align: 'left',
+                    x: 120,
+                    verticalAlign: 'top',
+                    y: 100,
+                    floating: true,
+                    backgroundColor: Highcharts.defaultOptions.legend.backgroundColor || // theme
+                        'rgba(255,255,255,0.25)'
+                },
+                series: [{
+                    name: 'Rainfall',
+                    type: 'column',
+                    yAxis: 1,
+                    data: [49.9, 71.5, 106.4, 129.2, 144.0, 176.0, 135.6, 148.5, 216.4, 194.1, 95.6, 54.4],
+                    tooltip: {
+                        valueSuffix: ' mm'
+                    }
+                }, {
+                    name: 'Temperature',
+                    type: 'spline',
+                    data: [7.0, 6.9, 9.5, 14.5, 18.2, 21.5, 25.2, 26.5, 23.3, 18.3, 13.9, 9.6],
+                    tooltip: {
+                        valueSuffix: '°C'
+                    }
+                }]
+            });
+            Highcharts.chart('axes_line_column10', {
+                chart: {
+                    zoomType: 'xy'
+                },
+                title: {
+                    text: 'Average Monthly Temperature and Rainfall in Tokyo'
+                },
+                subtitle: {
+                    text: 'Source: WorldClimate.com'
+                },
+                colors: _Color,
+                xAxis: [{
+                    categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
+                    crosshair: true
+                }],
+                yAxis: [{ // Primary yAxis
+                    labels: {
+                        format: '{value}°C',
+                        style: {
+                            color: Highcharts.getOptions().colors[1]
+                        }
+                    },
+                    title: {
+                        text: 'Temperature',
+                        style: {
+                            color: Highcharts.getOptions().colors[1]
+                        }
+                    }
+                }, { // Secondary yAxis
+                    title: {
+                        text: 'Rainfall',
+                        style: {
+                            color: Highcharts.getOptions().colors[0]
+                        }
+                    },
+                    labels: {
+                        format: '{value} mm',
+                        style: {
+                            color: Highcharts.getOptions().colors[0]
+                        }
+                    },
+                    opposite: true
+                }],
+                tooltip: {
+                    shared: true
+                },
+                legend: {
+                    layout: 'vertical',
+                    align: 'left',
+                    x: 120,
+                    verticalAlign: 'top',
+                    y: 100,
+                    floating: true,
+                    backgroundColor: Highcharts.defaultOptions.legend.backgroundColor || // theme
+                        'rgba(255,255,255,0.25)'
+                },
+                series: [{
+                    name: 'Rainfall',
+                    type: 'column',
+                    yAxis: 1,
+                    data: [49.9, 71.5, 106.4, 129.2, 144.0, 176.0, 135.6, 148.5, 216.4, 194.1, 95.6, 54.4],
+                    tooltip: {
+                        valueSuffix: ' mm'
+                    }
+                }, {
+                    name: 'Temperature',
+                    type: 'spline',
+                    data: [7.0, 6.9, 9.5, 14.5, 18.2, 21.5, 25.2, 26.5, 23.3, 18.3, 13.9, 9.6],
+                    tooltip: {
+                        valueSuffix: '°C'
+                    }
+                }]
+            });
+            Highcharts.chart('axes_line_column11', {
+                chart: {
+                    zoomType: 'xy'
+                },
+                title: {
+                    text: 'Average Monthly Temperature and Rainfall in Tokyo'
+                },
+                subtitle: {
+                    text: 'Source: WorldClimate.com'
+                },
+                colors: _Color,
+                xAxis: [{
+                    categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
+                    crosshair: true
+                }],
+                yAxis: [{ // Primary yAxis
+                    labels: {
+                        format: '{value}°C',
+                        style: {
+                            color: Highcharts.getOptions().colors[1]
+                        }
+                    },
+                    title: {
+                        text: 'Temperature',
+                        style: {
+                            color: Highcharts.getOptions().colors[1]
+                        }
+                    }
+                }, { // Secondary yAxis
+                    title: {
+                        text: 'Rainfall',
+                        style: {
+                            color: Highcharts.getOptions().colors[0]
+                        }
+                    },
+                    labels: {
+                        format: '{value} mm',
+                        style: {
+                            color: Highcharts.getOptions().colors[0]
+                        }
+                    },
+                    opposite: true
+                }],
+                tooltip: {
+                    shared: true
+                },
+                legend: {
+                    layout: 'vertical',
+                    align: 'left',
+                    x: 120,
+                    verticalAlign: 'top',
+                    y: 100,
+                    floating: true,
+                    backgroundColor: Highcharts.defaultOptions.legend.backgroundColor || // theme
+                        'rgba(255,255,255,0.25)'
+                },
+                series: [{
+                    name: 'Rainfall',
+                    type: 'column',
+                    yAxis: 1,
+                    data: [49.9, 71.5, 106.4, 129.2, 144.0, 176.0, 135.6, 148.5, 216.4, 194.1, 95.6, 54.4],
+                    tooltip: {
+                        valueSuffix: ' mm'
+                    }
+                }, {
+                    name: 'Temperature',
+                    type: 'spline',
+                    data: [7.0, 6.9, 9.5, 14.5, 18.2, 21.5, 25.2, 26.5, 23.3, 18.3, 13.9, 9.6],
+                    tooltip: {
+                        valueSuffix: '°C'
+                    }
+                }]
+            });
+            </script>
+            <!-- template customize js -->
+            <script src="js/customize.js"></script>
+</body>
