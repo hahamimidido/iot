@@ -14,6 +14,8 @@
     <link rel="stylesheet" href="css/iot.css">
     <!-- favicon -->
     <link href="images/favicon.png" rel="icon" type="image/x-icon">
+    <!-- highlight -->
+    <link rel="stylesheet" href="vendor/highlight/github-gist.css">
 </head>
 <!-- 切換亮色與暗色，亮色不用加註，暗色 class="dark" -->
 
@@ -38,6 +40,35 @@
                 <div class="container">
                     <div class="title">
                         <h2>雙Chart範例</h2>
+                    </div>
+                    <h3 class="demo">Widget程式碼範例</h3>
+                    <div class="demo_info">
+                        <pre><code class="language-html">&lt;div class="chart_content"&gt;
+    &lt;p&gt;可自訂widget說明(可省略)&lt;/p&gt;
+    &lt;div class="double_chart"&gt;
+        &lt;div class="item"&gt;
+            &lt;div class="info_block"&gt;
+                &lt;h4&gt;圖表一&lt;/h4&gt;
+            &lt;/div&gt;
+            &lt;div class="chart"&gt;
+                &lt;figure class="highcharts-figure"&gt;
+                    &lt;!-- classname = null || h_200 || h_400 --&gt;
+                    &lt;div id="自訂名稱" class="h_200"&gt;&lt;/div&gt;
+                &lt;/figure&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class="item"&gt;
+            &lt;div class="info_block"&gt;
+                &lt;h4&gt;圖表二&lt;/h4&gt;
+            &lt;/div&gt;
+            &lt;div class="chart"&gt;
+                &lt;figure class="highcharts-figure"&gt;
+                 &lt;div id="自訂名稱" class="h_200"&gt;&lt;/div&gt;
+                &lt;/figure&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre>
                     </div>
                     <!-- flex-8-4 -->
                     <div class="flex-8-4">
@@ -1954,4 +1985,9 @@
             </script>
             <!-- template customize js -->
             <script src="js/customize.js"></script>
+            <!-- highlight -->
+            <script src="vendor/highlight/highlight.pack.js"></script>
+            <script>
+            hljs.initHighlightingOnLoad();
+            </script>
 </body>

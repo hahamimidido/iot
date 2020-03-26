@@ -14,6 +14,8 @@
     <link rel="stylesheet" href="css/iot.css">
     <!-- favicon -->
     <link href="images/favicon.png" rel="icon" type="image/x-icon">
+    <!-- highlight -->
+    <link rel="stylesheet" href="vendor/highlight/monokai-sublime.css">
 </head>
 <!-- 切換亮色與暗色，亮色不用加註，暗色 class="dark" -->
 
@@ -38,6 +40,25 @@
                 <div class="container">
                     <div class="title">
                         <h2>單一Chart範例</h2>
+                    </div>
+                    <h3 class="demo">Widget程式碼範例</h3>
+                    <div class="demo_info">
+                        <pre><code class="language-html">&lt;div class="chart_content"&gt;
+    &lt;p&gt;可自訂widget說明(可省略)&lt;/p&gt;
+    &lt;!-- 單一Chart --&gt;
+    &lt;!-- 標籤按鈕排列 classname = text-left || text-center || text-right --&gt;
+    &lt;div class="tag text-right"&gt;
+        &lt;ul&gt;
+            &lt;li class="active"&gt;&lt;a href="#"&gt;標籤1&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href="#"&gt;標籤2&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href="#"&gt;標籤3&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a href="#"&gt;標籤4&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/div&gt;
+    &lt;figure class="highcharts-figure"&gt;
+        &lt;div id="自訂名稱"&gt;&lt;/div&gt;
+    &lt;/figure&gt;
+&lt;/div&gt;</code></pre>
                     </div>
                     <!-- flex-8-4 -->
                     <div class="flex-8-4">
@@ -947,4 +968,9 @@
             </script>
             <!-- template customize js -->
             <script src="js/customize.js"></script>
+            <!-- highlight -->
+            <script src="vendor/highlight/highlight.pack.js"></script>
+            <script>
+            hljs.initHighlightingOnLoad();
+            </script>
 </body>

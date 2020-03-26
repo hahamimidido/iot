@@ -14,6 +14,8 @@
     <link rel="stylesheet" href="css/iot.css">
     <!-- favicon -->
     <link href="images/favicon.png" rel="icon" type="image/x-icon">
+    <!-- highlight -->
+    <link rel="stylesheet" href="vendor/highlight/monokai-sublime.css">
 </head>
 <!-- 切換亮色與暗色，亮色不用加註，暗色 class="dark" -->
 
@@ -38,6 +40,48 @@
                 <div class="container">
                     <div class="title">
                         <h2>時間軸範例</h2>
+                    </div>
+                    <h3 class="demo">Widget程式碼範例</h3>
+                    <div class="demo_info">
+                        <pre><code class="language-html">&lt;div class="chart_content"&gt;
+    &lt;!-- 時間軸 --&gt;
+    &lt;div class="timeline_block"&gt;
+        &lt;ul class="timeline"&gt;
+            &lt;!-- 第1筆 --&gt;
+            &lt;li class="timeline-item"&gt;
+                &lt;!-- 日期 --&gt;
+                &lt;div class="timeline-item__timestamp"&gt;
+                    &lt;div class="dot"&gt;&lt;/div&gt;
+                    &lt;time&gt;1/13&lt;/time&gt;
+                    &lt;h4&gt;(可放標題)&lt;/h4&gt;
+                &lt;/div&gt;
+                &lt;div class="timeline-item__content"&gt; ​
+                    &lt;ul&gt;
+                        &lt;li&gt;&lt;time&gt;08:00&lt;/time&gt;...&lt;/li&gt;
+                        &lt;li&gt;&lt;time&gt;15:00&lt;/time&gt;...&lt;/li&gt;
+                    &lt;/ul&gt;
+                &lt;/div&gt;
+            &lt;/li&gt;
+            &lt;!-- 第2筆 --&gt;
+            &lt;li class="timeline-item"&gt;
+                &lt;!-- 日期 --&gt;
+                &lt;div class="timeline-item__timestamp"&gt;
+                    &lt;!-- active 請加上classname --&gt;
+                    &lt;div class="dot active"&gt;&lt;/div&gt;
+                    &lt;time&gt;1/10&lt;/time&gt;
+                    &lt;h4&gt;(可放標題)&lt;/h4&gt;
+                &lt;/div&gt;
+                &lt;div class="timeline-item__content"&gt; ​
+                    &lt;ul&gt;
+                        &lt;li&gt;&lt;time&gt;21:00&lt;/time&gt;...&lt;/li&gt;
+                        &lt;li&gt;&lt;time&gt;17:20&lt;/time&gt;...&lt;/li&gt;
+                        &lt;li&gt;&lt;time&gt;14:00&lt;/time&gt;...&lt;/li&gt;
+                    &lt;/ul&gt;
+                &lt;/div&gt;
+            &lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre>
                     </div>
                     <!-- flex-8-4 -->
                     <div class="flex-8-4">
@@ -1473,4 +1517,9 @@
             </script>
             <!-- template customize js -->
             <script src="js/customize.js"></script>
+            <!-- highlight -->
+            <script src="vendor/highlight/highlight.pack.js"></script>
+            <script>
+            hljs.initHighlightingOnLoad();
+            </script>
 </body>

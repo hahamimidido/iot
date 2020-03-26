@@ -14,6 +14,8 @@
     <link rel="stylesheet" href="css/iot.css">
     <!-- favicon -->
     <link href="images/favicon.png" rel="icon" type="image/x-icon">
+    <!-- highlight -->
+    <link rel="stylesheet" href="vendor/highlight/github-gist.css">
 </head>
 <!-- 切換亮色與暗色，亮色不用加註，暗色 class="dark" -->
 
@@ -39,6 +41,33 @@
                     <div class="title">
                         <h2>指數 + 進度條範例</h2>
                     </div>
+                    <h3 class="demo">Widget程式碼範例</h3>
+                    <div class="demo_info">
+                        <pre><code class="language-html">&lt;div class="chart_content"&gt;
+    &lt;p&gt;可自訂widget說明(可省略)&lt;/p&gt;
+    &lt;!-- 指數 + 進度條 --&gt;
+    &lt;div class="solidgauge_block"&gt;
+        &lt;div class="item"&gt;
+            &lt;div class="solidgauge_title"&gt;
+                指數標題
+            &lt;/div&gt;
+            &lt;!-- 進度條圖 --&gt;
+            &lt;figure class="highcharts-figure"&gt;
+                &lt;div id="自訂名稱"&gt;&lt;/div&gt;
+            &lt;/figure&gt;
+        &lt;/div&gt;
+        &lt;div class="item"&gt;
+            &lt;div class="solidgauge_title"&gt;
+                指數標題
+            &lt;/div&gt;
+            &lt;!-- 進度條圖 --&gt;
+            &lt;figure class="highcharts-figure"&gt;
+                &lt;div id="自訂名稱"&gt;&lt;/div&gt;
+            &lt;/figure&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+                    </div>
                     <!-- flex-8-4 -->
                     <div class="flex-8-4">
                         <div class="col ">
@@ -63,7 +92,6 @@
                                             <div class="solidgauge_title">
                                                 指數標題：type 1
                                             </div>
-
                                             <!-- 進度條圖 -->
                                             <figure class="highcharts-figure">
                                                 <div id="solidgauge24" class="red"></div>
@@ -1224,4 +1252,9 @@
             </script>
             <!-- template customize js -->
             <script src="js/customize.js"></script>
+            <!-- highlight -->
+            <script src="vendor/highlight/highlight.pack.js"></script>
+            <script>
+            hljs.initHighlightingOnLoad();
+            </script>
 </body>
