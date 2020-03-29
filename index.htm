@@ -34,7 +34,7 @@
         margin-bottom: 1em
     }
     body {
-        background: #DEDEDE;
+        background: #F7F7F7;
         counter-reset: num
     }
     .preview {
@@ -54,7 +54,7 @@
         height: 330px;
         font-size: 2em;
         color: #333;
-        text-decoration: none
+        text-decoration: none;
     }
     .preview li a:hover img {
         transform: scale(1.05)
@@ -75,7 +75,9 @@
     .preview li a img {
         transition: .3s ease-out;
         width: 100%;
-        border-radius: .5em
+        border-radius: .5em;
+        box-shadow: 0px 5px 15px rgba(0, 0, 0, .2);
+
     }
     table {
         width: 100%;
@@ -129,12 +131,28 @@
         text-align: center;
         font-size: .875em;
     }
+    .btn{
+        width: 200px;
+        padding: .5em;
+        text-align: center;
+        background: #06f;
+        border-radius: .4em;
+        display: block;
+        margin: 1em auto;
+        color: #FFF;
+    }
+    .btn:hover{
+        background: #03c;
+
+    }
     </style>
 </head>
 
 <body>
     <div class="wrapper">
         <h1>IOT admin template</h1>
+        <a href="https://github.com/hahamimidido/iot" target="_blank" class="btn">github 檔案下載</a>
+
         <ul class="preview">
             <li>
                 <a href="light.htm">
@@ -149,6 +167,7 @@
                 </a>
             </li>
         </ul>
+
         <table>
             <thead>
                 <tr>
@@ -236,7 +255,7 @@
                     <td>多tab</td>
                     <td><a href="light_multi_tab.htm">light_multi_tab.htm</a></td>
                     <td><a href="dark_multi_tab.htm">dark_single_chart.htm</a></td>
-                    <td><span class="ing">進行中</span></td>
+                    <td><span class="notyet">待確認</span></td>
                 </tr>
                 <tr>
                     <td>時間軸</td>
