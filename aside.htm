@@ -19,7 +19,13 @@
             <li>
                 <a href="light.htm">
                     <img src="images/icon/icon_home.svg" alt="">
-                    <span>回light首頁</span>
+                    <span>回light多彩色版</span>
+                </a>
+            </li>
+            <li>
+                <a href="light_color2.htm">
+                    <img src="images/icon/icon_home.svg" alt="">
+                    <span>回light相近色版</span>
                 </a>
             </li>
             <li>
@@ -208,5 +214,13 @@ $(function() {
         $(this).blur();
         e.preventDefault();
     });
+    $('aside nav ul ul').each(function(index, el) {
+        $(this).children('li').find('a').off().click(function(e) {
+            $('aside nav ul ul').find('li').removeClass('active');
+            $(this).parent('li').toggleClass('active');
+            e.preventDefault();
+        });
+    });
+
 });
 </script>
