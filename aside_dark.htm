@@ -218,7 +218,6 @@ $(function() {
         $(this).children('li').find('a').off().click(function(e) {
             $('aside nav ul ul').find('li').removeClass('active');
             $(this).parent('li').toggleClass('active');
-            e.preventDefault();
         });
     });
 });
