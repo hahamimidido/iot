@@ -1,6 +1,6 @@
 $(function() {
     //圖表變數
-    var _Color = ['#0570c2', '#0c9ee7', '#23c4f9', '#ffbc08', '#16aec4', '#03cdc2', '#06e7e4', '#F49F0A'];
+    var _Color = ['#0570c2', '#0c9ee7', '#23c4f9', '#F49F0A', '#03cdc2', '#16aec4', '#06e7e4', '#f6c21d'];
     // Create the chart
     Highcharts.chart('areaChart', {
         chart: {
