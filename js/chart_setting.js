@@ -146,7 +146,7 @@ $(function() {
         },
         series: [{
             name: 'Female',
-            color: 'rgba(223, 83, 83, .5)',
+            color: '#20A4F3',
             data: [
                 [161.2, 51.6],
                 [167.5, 59.0],
@@ -411,7 +411,7 @@ $(function() {
             ]
         }, {
             name: 'Male',
-            color: 'rgba(119, 152, 191, .5)',
+            color: '#54CEC3',
             data: [
                 [174.0, 65.6],
                 [175.3, 71.8],
